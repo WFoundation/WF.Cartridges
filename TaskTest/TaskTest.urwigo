@@ -44,7 +44,7 @@ Created by Jonny65</System:String>
 <System:DateTime>09/21/2013 20:50:30</System:DateTime>
 </CreateDate>
 <UpdateDate>
-<System:DateTime>01/29/2014 09:38:07</System:DateTime>
+<System:DateTime>01/29/2014 10:21:25</System:DateTime>
 </UpdateDate>
 <Complete>
 <System:Boolean>False</System:Boolean>
@@ -2799,6 +2799,39 @@ Created by Jonny65</System:String>
 <Enabled>
 <System:Boolean>True</System:Boolean>
 </Enabled>
+<Actions>
+<Actions:MessageBoxAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Text>
+<Actions:ValueExpressionAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Value>
+<System:String>Called task OnClick event</System:String>
+</Value>
+</Actions:ValueExpressionAction>
+</Text>
+<Media>
+<Wherigo:WigoMedia xsi:nil="true" />
+</Media>
+<Button1Text>
+<System:String xsi:nil="true" />
+</Button1Text>
+<Button2Text>
+<System:String xsi:nil="true" />
+</Button2Text>
+<ButtonClickedAction>
+<Actions:DoAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+</Actions:DoAction>
+</ButtonClickedAction>
+</Actions:MessageBoxAction>
+</Actions>
 <Owner>
 <Wherigo:WigoTask xsi:nil="true" ref="key27" />
 </Owner>
