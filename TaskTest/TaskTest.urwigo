@@ -4,7 +4,7 @@
 <System:String>cartTaskTest</System:String>
 </Identifier>
 <Name>
-<System:String>Task</System:String>
+<System:String>WF.TaskTest</System:String>
 </Name>
 <Description>
 <System:String>TaskTest
@@ -38,13 +38,13 @@ Created by Jonny65</System:String>
 <System:String xsi:nil="true" />
 </Company>
 <Author>
-<System:String xsi:nil="true" />
+<System:String>Jonny65</System:String>
 </Author>
 <CreateDate>
 <System:DateTime>09/21/2013 20:50:30</System:DateTime>
 </CreateDate>
 <UpdateDate>
-<System:DateTime>01/29/2014 10:21:25</System:DateTime>
+<System:DateTime>01/29/2014 14:12:45</System:DateTime>
 </UpdateDate>
 <Complete>
 <System:Boolean>False</System:Boolean>

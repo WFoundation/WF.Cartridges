@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Wherigo:WigoCartridge xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Wherigo="clr-namespace:YourSelf.Urwigo.Wherigo;assembly=Urwigo" xmlns:System="clr-namespace:System;assembly=mscorlib" xmlns:Actions="clr-namespace:YourSelf.Urwigo.Wherigo.Actions;assembly=Urwigo" key="key12">
+<Wherigo:WigoCartridge xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Wherigo="clr-namespace:YourSelf.Urwigo.Wherigo;assembly=Urwigo" xmlns:System="clr-namespace:System;assembly=mscorlib" xmlns:Actions="clr-namespace:YourSelf.Urwigo.Wherigo.Actions;assembly=Urwigo" key="key13">
 <Identifier>
-<System:String xsi:nil="true" />
+<System:String>cartDialogTest</System:String>
 </Identifier>
 <Name>
-<System:String>DialogTest</System:String>
+<System:String>WF.DialogTest</System:String>
 </Name>
 <Description>
 <System:String>Test cartridge for MessageBoxes and Dialogs</System:String>
@@ -16,7 +16,36 @@
 <Wherigo:WigoMedia xsi:nil="true" />
 </Image>
 <Icon>
-<Wherigo:WigoMedia xsi:nil="true" />
+<Wherigo:WigoMedia key="key0">
+<Identifier>
+<System:String xsi:nil="true" />
+</Identifier>
+<Name>
+<System:String>Name</System:String>
+</Name>
+<Description>
+<System:String xsi:nil="true" />
+</Description>
+<AltText>
+<System:String xsi:nil="true" />
+</AltText>
+<Type>
+<Wherigo:WigoMediaType>Image</Wherigo:WigoMediaType>
+</Type>
+<Resources>
+<Wherigo:WigoResource>
+<Identifier>
+<System:String xsi:nil="true" />
+</Identifier>
+<Filename>
+<System:String>Icon.jpg</System:String>
+</Filename>
+<Directives>
+<Wherigo:WigoResourceDirectives>None</Wherigo:WigoResourceDirectives>
+</Directives>
+</Wherigo:WigoResource>
+</Resources>
+</Wherigo:WigoMedia>
 </Icon>
 <Activity>
 <Wherigo:WigoActivityType>TourGuide</Wherigo:WigoActivityType>
@@ -31,16 +60,16 @@
 <System:String xsi:nil="true" />
 </Version>
 <Company>
-<System:String xsi:nil="true" />
+<System:String>Wherigo Foundation</System:String>
 </Company>
 <Author>
-<System:String xsi:nil="true" />
+<System:String>Charlenni</System:String>
 </Author>
 <CreateDate>
 <System:DateTime>01/29/2014 11:11:22</System:DateTime>
 </CreateDate>
 <UpdateDate>
-<System:DateTime>01/29/2014 12:05:40</System:DateTime>
+<System:DateTime>01/29/2014 14:14:51</System:DateTime>
 </UpdateDate>
 <Complete>
 <System:Boolean>False</System:Boolean>
@@ -76,39 +105,10 @@
 <System:String xsi:nil="true" />
 </ProtectSimulationText>
 <Media>
-<Wherigo:WigoMedia>
-<Identifier>
-<System:String xsi:nil="true" />
-</Identifier>
-<Name>
-<System:String>Name</System:String>
-</Name>
-<Description>
-<System:String xsi:nil="true" />
-</Description>
-<AltText>
-<System:String xsi:nil="true" />
-</AltText>
-<Type>
-<Wherigo:WigoMediaType>Image</Wherigo:WigoMediaType>
-</Type>
-<Resources>
-<Wherigo:WigoResource>
-<Identifier>
-<System:String xsi:nil="true" />
-</Identifier>
-<Filename>
-<System:String>Icon.jpg</System:String>
-</Filename>
-<Directives>
-<Wherigo:WigoResourceDirectives>None</Wherigo:WigoResourceDirectives>
-</Directives>
-</Wherigo:WigoResource>
-</Resources>
-</Wherigo:WigoMedia>
+<Wherigo:WigoMedia xsi:nil="true" ref="key0" />
 </Media>
 <Media>
-<Wherigo:WigoMedia key="key7">
+<Wherigo:WigoMedia key="key8">
 <Identifier>
 <System:String xsi:nil="true" />
 </Identifier>
@@ -140,7 +140,7 @@
 </Wherigo:WigoMedia>
 </Media>
 <Items>
-<Wherigo:WigoItem key="key1">
+<Wherigo:WigoItem key="key2">
 <Identifier>
 <System:String xsi:nil="true" />
 </Identifier>
@@ -162,7 +162,7 @@
 <ObjectLocation>
 <Wherigo:WigoObjectLocation>
 <Container>
-<Wherigo:WigoPlayer key="key2">
+<Wherigo:WigoPlayer key="key3">
 <Identifier>
 <System:String>Player</System:String>
 </Identifier>
@@ -174,7 +174,7 @@
 </Wherigo:WigoObjectLocation>
 </ObjectLocation>
 <Commands>
-<Wherigo:WigoCommand key="key0">
+<Wherigo:WigoCommand key="key1">
 <Identifier>
 <System:String xsi:nil="true" />
 </Identifier>
@@ -206,7 +206,13 @@
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Value>
-<System:String>This is a MessageBox without buttons, so that the default button should be shown</System:String>
+<System:String>This is a MessageBox without buttons, so that the default button should be shown
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean laoreet elit vitae metus feugiat, quis convallis diam rhoncus. Pellentesque vitae enim ut arcu feugiat venenatis sit amet at ipsum. Proin feugiat quam et enim vehicula rutrum. Integer condimentum felis et eleifend semper. 
+
+Maecenas adipiscing tincidunt justo, at ullamcorper enim tempus in. Curabitur nulla leo, imperdiet at aliquet ac, lacinia sit amet mauris. Phasellus pellentesque mollis nunc. Fusce lobortis aliquam orci sed egestas. Integer convallis elit neque, non suscipit odio tempus sit amet. Nullam nec massa ut turpis gravida accumsan non vulputate diam. 
+
+Aenean pharetra tincidunt ante, ut dapibus tellus mollis id. Donec bibendum accumsan augue, nec sollicitudin turpis aliquet non. Nunc nec risus adipiscing, feugiat ipsum vitae, placerat massa.</System:String>
 </Value>
 </Actions:ValueExpressionAction>
 </Text>
@@ -229,7 +235,7 @@
 </Actions:MessageBoxAction>
 </Actions>
 <Owner>
-<Wherigo:WigoCommand xsi:nil="true" ref="key0" />
+<Wherigo:WigoCommand xsi:nil="true" ref="key1" />
 </Owner>
 </Actions:EventAction>
 </ExecuteAction>
@@ -241,7 +247,7 @@
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Owner>
-<Wherigo:WigoItem xsi:nil="true" ref="key1" />
+<Wherigo:WigoItem xsi:nil="true" ref="key2" />
 </Owner>
 </Actions:EventAction>
 </ClickAction>
@@ -254,7 +260,7 @@
 </Wherigo:WigoItem>
 </Items>
 <Items>
-<Wherigo:WigoItem key="key4">
+<Wherigo:WigoItem key="key5">
 <Identifier>
 <System:String xsi:nil="true" />
 </Identifier>
@@ -276,7 +282,7 @@
 <ObjectLocation>
 <Wherigo:WigoObjectLocation>
 <Container>
-<Wherigo:WigoPlayer xsi:nil="true" ref="key2" />
+<Wherigo:WigoPlayer xsi:nil="true" ref="key3" />
 </Container>
 <Location>
 <Wherigo:WigoCoordinate xsi:nil="true" />
@@ -284,7 +290,7 @@
 </Wherigo:WigoObjectLocation>
 </ObjectLocation>
 <Commands>
-<Wherigo:WigoCommand key="key3">
+<Wherigo:WigoCommand key="key4">
 <Identifier>
 <System:String xsi:nil="true" />
 </Identifier>
@@ -316,7 +322,13 @@
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Value>
-<System:String>This is a MessageBox with one button</System:String>
+<System:String>This is a MessageBox with one button
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean laoreet elit vitae metus feugiat, quis convallis diam rhoncus. Pellentesque vitae enim ut arcu feugiat venenatis sit amet at ipsum. Proin feugiat quam et enim vehicula rutrum. Integer condimentum felis et eleifend semper. 
+
+Maecenas adipiscing tincidunt justo, at ullamcorper enim tempus in. Curabitur nulla leo, imperdiet at aliquet ac, lacinia sit amet mauris. Phasellus pellentesque mollis nunc. Fusce lobortis aliquam orci sed egestas. Integer convallis elit neque, non suscipit odio tempus sit amet. Nullam nec massa ut turpis gravida accumsan non vulputate diam. 
+
+Aenean pharetra tincidunt ante, ut dapibus tellus mollis id. Donec bibendum accumsan augue, nec sollicitudin turpis aliquet non. Nunc nec risus adipiscing, feugiat ipsum vitae, placerat massa.</System:String>
 </Value>
 </Actions:ValueExpressionAction>
 </Text>
@@ -529,7 +541,7 @@
 </Actions:MessageBoxAction>
 </Actions>
 <Owner>
-<Wherigo:WigoCommand xsi:nil="true" ref="key3" />
+<Wherigo:WigoCommand xsi:nil="true" ref="key4" />
 </Owner>
 </Actions:EventAction>
 </ExecuteAction>
@@ -541,7 +553,7 @@
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Owner>
-<Wherigo:WigoItem xsi:nil="true" ref="key4" />
+<Wherigo:WigoItem xsi:nil="true" ref="key5" />
 </Owner>
 </Actions:EventAction>
 </ClickAction>
@@ -554,7 +566,7 @@
 </Wherigo:WigoItem>
 </Items>
 <Items>
-<Wherigo:WigoItem key="key6">
+<Wherigo:WigoItem key="key7">
 <Identifier>
 <System:String xsi:nil="true" />
 </Identifier>
@@ -576,7 +588,7 @@
 <ObjectLocation>
 <Wherigo:WigoObjectLocation>
 <Container>
-<Wherigo:WigoPlayer xsi:nil="true" ref="key2" />
+<Wherigo:WigoPlayer xsi:nil="true" ref="key3" />
 </Container>
 <Location>
 <Wherigo:WigoCoordinate xsi:nil="true" />
@@ -584,7 +596,7 @@
 </Wherigo:WigoObjectLocation>
 </ObjectLocation>
 <Commands>
-<Wherigo:WigoCommand key="key5">
+<Wherigo:WigoCommand key="key6">
 <Identifier>
 <System:String xsi:nil="true" />
 </Identifier>
@@ -616,7 +628,13 @@
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Value>
-<System:String>This is a MessageBox with two buttons</System:String>
+<System:String>This is a MessageBox with two buttons
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean laoreet elit vitae metus feugiat, quis convallis diam rhoncus. Pellentesque vitae enim ut arcu feugiat venenatis sit amet at ipsum. Proin feugiat quam et enim vehicula rutrum. Integer condimentum felis et eleifend semper. 
+
+Maecenas adipiscing tincidunt justo, at ullamcorper enim tempus in. Curabitur nulla leo, imperdiet at aliquet ac, lacinia sit amet mauris. Phasellus pellentesque mollis nunc. Fusce lobortis aliquam orci sed egestas. Integer convallis elit neque, non suscipit odio tempus sit amet. Nullam nec massa ut turpis gravida accumsan non vulputate diam. 
+
+Aenean pharetra tincidunt ante, ut dapibus tellus mollis id. Donec bibendum accumsan augue, nec sollicitudin turpis aliquet non. Nunc nec risus adipiscing, feugiat ipsum vitae, placerat massa.</System:String>
 </Value>
 </Actions:ValueExpressionAction>
 </Text>
@@ -899,7 +917,7 @@
 </Actions:MessageBoxAction>
 </Actions>
 <Owner>
-<Wherigo:WigoCommand xsi:nil="true" ref="key5" />
+<Wherigo:WigoCommand xsi:nil="true" ref="key6" />
 </Owner>
 </Actions:EventAction>
 </ExecuteAction>
@@ -911,7 +929,7 @@
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Owner>
-<Wherigo:WigoItem xsi:nil="true" ref="key6" />
+<Wherigo:WigoItem xsi:nil="true" ref="key7" />
 </Owner>
 </Actions:EventAction>
 </ClickAction>
@@ -924,7 +942,7 @@
 </Wherigo:WigoItem>
 </Items>
 <Items>
-<Wherigo:WigoItem key="key9">
+<Wherigo:WigoItem key="key10">
 <Identifier>
 <System:String xsi:nil="true" />
 </Identifier>
@@ -946,7 +964,7 @@
 <ObjectLocation>
 <Wherigo:WigoObjectLocation>
 <Container>
-<Wherigo:WigoPlayer xsi:nil="true" ref="key2" />
+<Wherigo:WigoPlayer xsi:nil="true" ref="key3" />
 </Container>
 <Location>
 <Wherigo:WigoCoordinate xsi:nil="true" />
@@ -954,7 +972,7 @@
 </Wherigo:WigoObjectLocation>
 </ObjectLocation>
 <Commands>
-<Wherigo:WigoCommand key="key8">
+<Wherigo:WigoCommand key="key9">
 <Identifier>
 <System:String xsi:nil="true" />
 </Identifier>
@@ -996,7 +1014,7 @@
 </Actions:ValueExpressionAction>
 </Text>
 <Media>
-<Wherigo:WigoMedia xsi:nil="true" ref="key7" />
+<Wherigo:WigoMedia xsi:nil="true" ref="key8" />
 </Media>
 </Actions:DialogEntryAction>
 </Actions>
@@ -1036,7 +1054,7 @@
 </Actions:ValueExpressionAction>
 </Text>
 <Media>
-<Wherigo:WigoMedia xsi:nil="true" ref="key7" />
+<Wherigo:WigoMedia xsi:nil="true" ref="key8" />
 </Media>
 </Actions:DialogEntryAction>
 </Actions>
@@ -1059,7 +1077,7 @@
 </Actions:DialogAction>
 </Actions>
 <Owner>
-<Wherigo:WigoCommand xsi:nil="true" ref="key8" />
+<Wherigo:WigoCommand xsi:nil="true" ref="key9" />
 </Owner>
 </Actions:EventAction>
 </ExecuteAction>
@@ -1071,7 +1089,7 @@
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Owner>
-<Wherigo:WigoItem xsi:nil="true" ref="key9" />
+<Wherigo:WigoItem xsi:nil="true" ref="key10" />
 </Owner>
 </Actions:EventAction>
 </ClickAction>
@@ -1084,7 +1102,7 @@
 </Wherigo:WigoItem>
 </Items>
 <Items>
-<Wherigo:WigoItem key="key11">
+<Wherigo:WigoItem key="key12">
 <Identifier>
 <System:String xsi:nil="true" />
 </Identifier>
@@ -1106,7 +1124,7 @@
 <ObjectLocation>
 <Wherigo:WigoObjectLocation>
 <Container>
-<Wherigo:WigoPlayer xsi:nil="true" ref="key2" />
+<Wherigo:WigoPlayer xsi:nil="true" ref="key3" />
 </Container>
 <Location>
 <Wherigo:WigoCoordinate xsi:nil="true" />
@@ -1114,7 +1132,7 @@
 </Wherigo:WigoObjectLocation>
 </ObjectLocation>
 <Commands>
-<Wherigo:WigoCommand key="key10">
+<Wherigo:WigoCommand key="key11">
 <Identifier>
 <System:String xsi:nil="true" />
 </Identifier>
@@ -1146,7 +1164,7 @@
 </Actions:SnippetAction>
 </Actions>
 <Owner>
-<Wherigo:WigoCommand xsi:nil="true" ref="key10" />
+<Wherigo:WigoCommand xsi:nil="true" ref="key11" />
 </Owner>
 </Actions:EventAction>
 </ExecuteAction>
@@ -1158,7 +1176,7 @@
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Owner>
-<Wherigo:WigoItem xsi:nil="true" ref="key11" />
+<Wherigo:WigoItem xsi:nil="true" ref="key12" />
 </Owner>
 </Actions:EventAction>
 </ClickAction>
@@ -1190,7 +1208,7 @@
 </Wherigo:WigoVariable>
 </Variables>
 <Player>
-<Wherigo:WigoPlayer xsi:nil="true" ref="key2" />
+<Wherigo:WigoPlayer xsi:nil="true" ref="key3" />
 </Player>
 <CurrentZone>
 <Wherigo:WigoCurrentZone>
@@ -1247,7 +1265,7 @@
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Owner>
-<Wherigo:WigoCartridge xsi:nil="true" ref="key12" />
+<Wherigo:WigoCartridge xsi:nil="true" ref="key13" />
 </Owner>
 </Actions:EventAction>
 </StartAction>
@@ -1257,7 +1275,7 @@
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Owner>
-<Wherigo:WigoCartridge xsi:nil="true" ref="key12" />
+<Wherigo:WigoCartridge xsi:nil="true" ref="key13" />
 </Owner>
 </Actions:EventAction>
 </EndAction>
@@ -1267,7 +1285,7 @@
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Owner>
-<Wherigo:WigoCartridge xsi:nil="true" ref="key12" />
+<Wherigo:WigoCartridge xsi:nil="true" ref="key13" />
 </Owner>
 </Actions:EventAction>
 </ResumeAction>
@@ -1277,7 +1295,7 @@
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Owner>
-<Wherigo:WigoCartridge xsi:nil="true" ref="key12" />
+<Wherigo:WigoCartridge xsi:nil="true" ref="key13" />
 </Owner>
 </Actions:EventAction>
 </SaveAction>
@@ -1287,7 +1305,7 @@
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Owner>
-<Wherigo:WigoCartridge xsi:nil="true" ref="key12" />
+<Wherigo:WigoCartridge xsi:nil="true" ref="key13" />
 </Owner>
 </Actions:GlobalEventAction>
 </GlobalZoneEnterAction>
@@ -1297,7 +1315,7 @@
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Owner>
-<Wherigo:WigoCartridge xsi:nil="true" ref="key12" />
+<Wherigo:WigoCartridge xsi:nil="true" ref="key13" />
 </Owner>
 </Actions:GlobalEventAction>
 </GlobalZoneExitAction>
@@ -1307,7 +1325,7 @@
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Owner>
-<Wherigo:WigoCartridge xsi:nil="true" ref="key12" />
+<Wherigo:WigoCartridge xsi:nil="true" ref="key13" />
 </Owner>
 </Actions:GlobalEventAction>
 </GlobalZoneDistantAction>
@@ -1317,7 +1335,7 @@
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Owner>
-<Wherigo:WigoCartridge xsi:nil="true" ref="key12" />
+<Wherigo:WigoCartridge xsi:nil="true" ref="key13" />
 </Owner>
 </Actions:GlobalEventAction>
 </GlobalZoneProximityAction>
@@ -1327,7 +1345,7 @@
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Owner>
-<Wherigo:WigoCartridge xsi:nil="true" ref="key12" />
+<Wherigo:WigoCartridge xsi:nil="true" ref="key13" />
 </Owner>
 </Actions:GlobalEventAction>
 </GlobalZoneActiveChangedAction>
