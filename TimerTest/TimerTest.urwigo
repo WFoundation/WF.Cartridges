@@ -51,7 +51,7 @@ Created by Jonny65</System:String>
 <System:DateTime>08/12/2012 11:22:53</System:DateTime>
 </CreateDate>
 <UpdateDate>
-<System:DateTime>01/29/2014 14:13:34</System:DateTime>
+<System:DateTime>01/30/2014 11:37:36</System:DateTime>
 </UpdateDate>
 <Complete>
 <System:Boolean>False</System:Boolean>
@@ -1339,7 +1339,8 @@ Created by Jonny65</System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Value>
-<System:String>, Device is </System:String>
+<System:String>
+Device is </System:String>
 </Value>
 </Actions:ValueExpressionAction>
 </Actions>

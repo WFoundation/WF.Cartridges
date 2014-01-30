@@ -1,0 +1,849 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wherigo:WigoCartridge xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Wherigo="clr-namespace:YourSelf.Urwigo.Wherigo;assembly=Urwigo" xmlns:System="clr-namespace:System;assembly=mscorlib" xmlns:Actions="clr-namespace:YourSelf.Urwigo.Wherigo.Actions;assembly=Urwigo" key="key12">
+<Identifier>
+<System:String>carLinebreak</System:String>
+</Identifier>
+<Name>
+<System:String>WF.Linebreaks</System:String>
+</Name>
+<Description>
+<System:String>Test different possibilities for linebreaks in cartridges</System:String>
+</Description>
+<Visible>
+<System:Boolean>True</System:Boolean>
+</Visible>
+<Image>
+<Wherigo:WigoMedia xsi:nil="true" />
+</Image>
+<Icon>
+<Wherigo:WigoMedia key="key0">
+<Identifier>
+<System:String xsi:nil="true" />
+</Identifier>
+<Name>
+<System:String>Name</System:String>
+</Name>
+<Description>
+<System:String xsi:nil="true" />
+</Description>
+<AltText>
+<System:String xsi:nil="true" />
+</AltText>
+<Type>
+<Wherigo:WigoMediaType>Image</Wherigo:WigoMediaType>
+</Type>
+<Resources>
+<Wherigo:WigoResource>
+<Identifier>
+<System:String xsi:nil="true" />
+</Identifier>
+<Filename>
+<System:String>Icon.jpg</System:String>
+</Filename>
+<Directives>
+<Wherigo:WigoResourceDirectives>None</Wherigo:WigoResourceDirectives>
+</Directives>
+</Wherigo:WigoResource>
+</Resources>
+</Wherigo:WigoMedia>
+</Icon>
+<Activity>
+<Wherigo:WigoActivityType>TourGuide</Wherigo:WigoActivityType>
+</Activity>
+<StartingLocationDescription>
+<System:String xsi:nil="true" />
+</StartingLocationDescription>
+<StartingLocation>
+<Wherigo:WigoCoordinate xsi:nil="true" />
+</StartingLocation>
+<Version>
+<System:String xsi:nil="true" />
+</Version>
+<Company>
+<System:String xsi:nil="true" />
+</Company>
+<Author>
+<System:String xsi:nil="true" />
+</Author>
+<CreateDate>
+<System:DateTime>01/30/2014 11:37:36</System:DateTime>
+</CreateDate>
+<UpdateDate>
+<System:DateTime>01/30/2014 14:05:47</System:DateTime>
+</UpdateDate>
+<Complete>
+<System:Boolean>False</System:Boolean>
+</Complete>
+<UseLogging>
+<System:Boolean>False</System:Boolean>
+</UseLogging>
+<InlineRequires>
+<System:Boolean>False</System:Boolean>
+</InlineRequires>
+<InlineRequireLuaPath>
+<System:String>?.lua; lua\?.lua; lua\?\init.lua; ?\init.lua</System:String>
+</InlineRequireLuaPath>
+<ObfuscateStrings>
+<System:Boolean>False</System:Boolean>
+</ObfuscateStrings>
+<HashInputAnswers>
+<System:Boolean>False</System:Boolean>
+</HashInputAnswers>
+<ObfuscateIdentifiers>
+<System:Boolean>False</System:Boolean>
+</ObfuscateIdentifiers>
+<ProtectEmulator>
+<System:Boolean>False</System:Boolean>
+</ProtectEmulator>
+<ProtectEmulatorText>
+<System:String xsi:nil="true" />
+</ProtectEmulatorText>
+<ProtectSimulation>
+<System:Boolean>False</System:Boolean>
+</ProtectSimulation>
+<ProtectSimulationText>
+<System:String xsi:nil="true" />
+</ProtectSimulationText>
+<Media>
+<Wherigo:WigoMedia xsi:nil="true" ref="key0" />
+</Media>
+<Items>
+<Wherigo:WigoItem key="key1">
+<Identifier>
+<System:String xsi:nil="true" />
+</Identifier>
+<Name>
+<System:String>Only HTML BR tag</System:String>
+</Name>
+<Description>
+<System:String>Only a HTML BR tag is between lines
+
+Line 1&lt;BR&gt;Line 2</System:String>
+</Description>
+<Visible>
+<System:Boolean>True</System:Boolean>
+</Visible>
+<Image>
+<Wherigo:WigoMedia xsi:nil="true" />
+</Image>
+<Icon>
+<Wherigo:WigoMedia xsi:nil="true" />
+</Icon>
+<ObjectLocation>
+<Wherigo:WigoObjectLocation>
+<Container>
+<Wherigo:WigoPlayer key="key2">
+<Identifier>
+<System:String>Player</System:String>
+</Identifier>
+</Wherigo:WigoPlayer>
+</Container>
+<Location>
+<Wherigo:WigoCoordinate xsi:nil="true" />
+</Location>
+</Wherigo:WigoObjectLocation>
+</ObjectLocation>
+<ClickAction>
+<Actions:EventAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Owner>
+<Wherigo:WigoItem xsi:nil="true" ref="key1" />
+</Owner>
+</Actions:EventAction>
+</ClickAction>
+<Locked>
+<System:Boolean>False</System:Boolean>
+</Locked>
+<Opened>
+<System:Boolean>False</System:Boolean>
+</Opened>
+</Wherigo:WigoItem>
+</Items>
+<Items>
+<Wherigo:WigoItem key="key3">
+<Identifier>
+<System:String xsi:nil="true" />
+</Identifier>
+<Name>
+<System:String>A HTML BR tag and a newline</System:String>
+</Name>
+<Description>
+<System:String>A HTML BR tag and a newline are between lines
+
+Line 1&lt;BR&gt;
+Line 2</System:String>
+</Description>
+<Visible>
+<System:Boolean>True</System:Boolean>
+</Visible>
+<Image>
+<Wherigo:WigoMedia xsi:nil="true" />
+</Image>
+<Icon>
+<Wherigo:WigoMedia xsi:nil="true" />
+</Icon>
+<ObjectLocation>
+<Wherigo:WigoObjectLocation>
+<Container>
+<Wherigo:WigoPlayer xsi:nil="true" ref="key2" />
+</Container>
+<Location>
+<Wherigo:WigoCoordinate xsi:nil="true" />
+</Location>
+</Wherigo:WigoObjectLocation>
+</ObjectLocation>
+<ClickAction>
+<Actions:EventAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Owner>
+<Wherigo:WigoItem xsi:nil="true" ref="key3" />
+</Owner>
+</Actions:EventAction>
+</ClickAction>
+<Locked>
+<System:Boolean>False</System:Boolean>
+</Locked>
+<Opened>
+<System:Boolean>False</System:Boolean>
+</Opened>
+</Wherigo:WigoItem>
+</Items>
+<Items>
+<Wherigo:WigoItem key="key4">
+<Identifier>
+<System:String xsi:nil="true" />
+</Identifier>
+<Name>
+<System:String>Long String</System:String>
+</Name>
+<Description>
+<System:String>A long string with newline is between lines
+
+Line 1
+Line 2</System:String>
+</Description>
+<Visible>
+<System:Boolean>True</System:Boolean>
+</Visible>
+<Image>
+<Wherigo:WigoMedia xsi:nil="true" />
+</Image>
+<Icon>
+<Wherigo:WigoMedia xsi:nil="true" />
+</Icon>
+<ObjectLocation>
+<Wherigo:WigoObjectLocation>
+<Container>
+<Wherigo:WigoPlayer xsi:nil="true" ref="key2" />
+</Container>
+<Location>
+<Wherigo:WigoCoordinate xsi:nil="true" />
+</Location>
+</Wherigo:WigoObjectLocation>
+</ObjectLocation>
+<ClickAction>
+<Actions:EventAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Owner>
+<Wherigo:WigoItem xsi:nil="true" ref="key4" />
+</Owner>
+</Actions:EventAction>
+</ClickAction>
+<Locked>
+<System:Boolean>False</System:Boolean>
+</Locked>
+<Opened>
+<System:Boolean>False</System:Boolean>
+</Opened>
+</Wherigo:WigoItem>
+</Items>
+<Items>
+<Wherigo:WigoItem key="key5">
+<Identifier>
+<System:String xsi:nil="true" />
+</Identifier>
+<Name>
+<System:String>Only newline</System:String>
+</Name>
+<Description>
+<System:String>Only a newline is between lines
+
+Line 1\010Line 2</System:String>
+</Description>
+<Visible>
+<System:Boolean>True</System:Boolean>
+</Visible>
+<Image>
+<Wherigo:WigoMedia xsi:nil="true" />
+</Image>
+<Icon>
+<Wherigo:WigoMedia xsi:nil="true" />
+</Icon>
+<ObjectLocation>
+<Wherigo:WigoObjectLocation>
+<Container>
+<Wherigo:WigoPlayer xsi:nil="true" ref="key2" />
+</Container>
+<Location>
+<Wherigo:WigoCoordinate xsi:nil="true" />
+</Location>
+</Wherigo:WigoObjectLocation>
+</ObjectLocation>
+<ClickAction>
+<Actions:EventAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Owner>
+<Wherigo:WigoItem xsi:nil="true" ref="key5" />
+</Owner>
+</Actions:EventAction>
+</ClickAction>
+<Locked>
+<System:Boolean>False</System:Boolean>
+</Locked>
+<Opened>
+<System:Boolean>False</System:Boolean>
+</Opened>
+</Wherigo:WigoItem>
+</Items>
+<Items>
+<Wherigo:WigoItem key="key6">
+<Identifier>
+<System:String xsi:nil="true" />
+</Identifier>
+<Name>
+<System:String>Only caridge return</System:String>
+</Name>
+<Description>
+<System:String>Only a newline is between lines
+
+Line 1\013Line 2</System:String>
+</Description>
+<Visible>
+<System:Boolean>True</System:Boolean>
+</Visible>
+<Image>
+<Wherigo:WigoMedia xsi:nil="true" />
+</Image>
+<Icon>
+<Wherigo:WigoMedia xsi:nil="true" />
+</Icon>
+<ObjectLocation>
+<Wherigo:WigoObjectLocation>
+<Container>
+<Wherigo:WigoPlayer xsi:nil="true" ref="key2" />
+</Container>
+<Location>
+<Wherigo:WigoCoordinate xsi:nil="true" />
+</Location>
+</Wherigo:WigoObjectLocation>
+</ObjectLocation>
+<ClickAction>
+<Actions:EventAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Owner>
+<Wherigo:WigoItem xsi:nil="true" ref="key6" />
+</Owner>
+</Actions:EventAction>
+</ClickAction>
+<Locked>
+<System:Boolean>False</System:Boolean>
+</Locked>
+<Opened>
+<System:Boolean>False</System:Boolean>
+</Opened>
+</Wherigo:WigoItem>
+</Items>
+<Items>
+<Wherigo:WigoItem key="key7">
+<Identifier>
+<System:String xsi:nil="true" />
+</Identifier>
+<Name>
+<System:String>A caridge return followed by a newline</System:String>
+</Name>
+<Description>
+<System:String>A caridge return followed by a newline is between lines
+
+Line 1\013\010Line 2</System:String>
+</Description>
+<Visible>
+<System:Boolean>True</System:Boolean>
+</Visible>
+<Image>
+<Wherigo:WigoMedia xsi:nil="true" />
+</Image>
+<Icon>
+<Wherigo:WigoMedia xsi:nil="true" />
+</Icon>
+<ObjectLocation>
+<Wherigo:WigoObjectLocation>
+<Container>
+<Wherigo:WigoPlayer xsi:nil="true" ref="key2" />
+</Container>
+<Location>
+<Wherigo:WigoCoordinate xsi:nil="true" />
+</Location>
+</Wherigo:WigoObjectLocation>
+</ObjectLocation>
+<ClickAction>
+<Actions:EventAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Owner>
+<Wherigo:WigoItem xsi:nil="true" ref="key7" />
+</Owner>
+</Actions:EventAction>
+</ClickAction>
+<Locked>
+<System:Boolean>False</System:Boolean>
+</Locked>
+<Opened>
+<System:Boolean>False</System:Boolean>
+</Opened>
+</Wherigo:WigoItem>
+</Items>
+<Items>
+<Wherigo:WigoItem key="key8">
+<Identifier>
+<System:String xsi:nil="true" />
+</Identifier>
+<Name>
+<System:String>A newline followed by a caridge return</System:String>
+</Name>
+<Description>
+<System:String>A newline followed by a caridge return is between lines
+
+Line 1\010\013Line 2</System:String>
+</Description>
+<Visible>
+<System:Boolean>True</System:Boolean>
+</Visible>
+<Image>
+<Wherigo:WigoMedia xsi:nil="true" />
+</Image>
+<Icon>
+<Wherigo:WigoMedia xsi:nil="true" />
+</Icon>
+<ObjectLocation>
+<Wherigo:WigoObjectLocation>
+<Container>
+<Wherigo:WigoPlayer xsi:nil="true" ref="key2" />
+</Container>
+<Location>
+<Wherigo:WigoCoordinate xsi:nil="true" />
+</Location>
+</Wherigo:WigoObjectLocation>
+</ObjectLocation>
+<ClickAction>
+<Actions:EventAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Owner>
+<Wherigo:WigoItem xsi:nil="true" ref="key8" />
+</Owner>
+</Actions:EventAction>
+</ClickAction>
+<Locked>
+<System:Boolean>False</System:Boolean>
+</Locked>
+<Opened>
+<System:Boolean>False</System:Boolean>
+</Opened>
+</Wherigo:WigoItem>
+</Items>
+<Items>
+<Wherigo:WigoItem key="key9">
+<Identifier>
+<System:String xsi:nil="true" />
+</Identifier>
+<Name>
+<System:String>Concatenation 1</System:String>
+</Name>
+<Description>
+<System:String xsi:nil="true" />
+</Description>
+<Visible>
+<System:Boolean>True</System:Boolean>
+</Visible>
+<Image>
+<Wherigo:WigoMedia xsi:nil="true" />
+</Image>
+<Icon>
+<Wherigo:WigoMedia xsi:nil="true" />
+</Icon>
+<ObjectLocation>
+<Wherigo:WigoObjectLocation>
+<Container>
+<Wherigo:WigoPlayer xsi:nil="true" ref="key2" />
+</Container>
+<Location>
+<Wherigo:WigoCoordinate xsi:nil="true" />
+</Location>
+</Wherigo:WigoObjectLocation>
+</ObjectLocation>
+<ClickAction>
+<Actions:EventAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Owner>
+<Wherigo:WigoItem xsi:nil="true" ref="key9" />
+</Owner>
+</Actions:EventAction>
+</ClickAction>
+<Locked>
+<System:Boolean>False</System:Boolean>
+</Locked>
+<Opened>
+<System:Boolean>False</System:Boolean>
+</Opened>
+</Wherigo:WigoItem>
+</Items>
+<Items>
+<Wherigo:WigoItem key="key10">
+<Identifier>
+<System:String xsi:nil="true" />
+</Identifier>
+<Name>
+<System:String>Concatenation 2</System:String>
+</Name>
+<Description>
+<System:String xsi:nil="true" />
+</Description>
+<Visible>
+<System:Boolean>True</System:Boolean>
+</Visible>
+<Image>
+<Wherigo:WigoMedia xsi:nil="true" />
+</Image>
+<Icon>
+<Wherigo:WigoMedia xsi:nil="true" />
+</Icon>
+<ObjectLocation>
+<Wherigo:WigoObjectLocation>
+<Container>
+<Wherigo:WigoPlayer xsi:nil="true" ref="key2" />
+</Container>
+<Location>
+<Wherigo:WigoCoordinate xsi:nil="true" />
+</Location>
+</Wherigo:WigoObjectLocation>
+</ObjectLocation>
+<ClickAction>
+<Actions:EventAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Owner>
+<Wherigo:WigoItem xsi:nil="true" ref="key10" />
+</Owner>
+</Actions:EventAction>
+</ClickAction>
+<Locked>
+<System:Boolean>False</System:Boolean>
+</Locked>
+<Opened>
+<System:Boolean>False</System:Boolean>
+</Opened>
+</Wherigo:WigoItem>
+</Items>
+<Variables>
+<Wherigo:WigoVariable key="key11">
+<Identifier>
+<System:String>CR</System:String>
+</Identifier>
+<Name>
+<System:String>CR</System:String>
+</Name>
+<Description>
+<System:String xsi:nil="true" />
+</Description>
+<Type>
+<Wherigo:WigoVariableType>String</Wherigo:WigoVariableType>
+</Type>
+<Value>
+<System:String></System:String>
+</Value>
+</Wherigo:WigoVariable>
+</Variables>
+<Player>
+<Wherigo:WigoPlayer xsi:nil="true" ref="key2" />
+</Player>
+<CurrentZone>
+<Wherigo:WigoCurrentZone>
+<Identifier>
+<System:String xsi:nil="true" />
+</Identifier>
+</Wherigo:WigoCurrentZone>
+</CurrentZone>
+<CurrentCharacter>
+<Wherigo:WigoCurrentCharacter>
+<Identifier>
+<System:String xsi:nil="true" />
+</Identifier>
+</Wherigo:WigoCurrentCharacter>
+</CurrentCharacter>
+<CurrentItem>
+<Wherigo:WigoCurrentItem>
+<Identifier>
+<System:String xsi:nil="true" />
+</Identifier>
+</Wherigo:WigoCurrentItem>
+</CurrentItem>
+<CurrentTask>
+<Wherigo:WigoCurrentTask>
+<Identifier>
+<System:String xsi:nil="true" />
+</Identifier>
+</Wherigo:WigoCurrentTask>
+</CurrentTask>
+<CurrentInput>
+<Wherigo:WigoCurrentInput>
+<Identifier>
+<System:String xsi:nil="true" />
+</Identifier>
+</Wherigo:WigoCurrentInput>
+</CurrentInput>
+<CurrentTimer>
+<Wherigo:WigoCurrentTimer>
+<Identifier>
+<System:String xsi:nil="true" />
+</Identifier>
+</Wherigo:WigoCurrentTimer>
+</CurrentTimer>
+<Environment>
+<Wherigo:WigoEnvironment>
+<Identifier>
+<System:String>Env</System:String>
+</Identifier>
+</Wherigo:WigoEnvironment>
+</Environment>
+<StartAction>
+<Actions:EventAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Actions>
+<Actions:SetAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<LeftContent>
+<Actions:ObjectPropertyReferenceExpressionAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Target>
+<Wherigo:WigoItem xsi:nil="true" ref="key9" />
+</Target>
+<Property>
+<System:String>Description</System:String>
+</Property>
+</Actions:ObjectPropertyReferenceExpressionAction>
+</LeftContent>
+<RightContent>
+<Actions:ConcatenateExpressionAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Actions>
+<Actions:ValueExpressionAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Value>
+<System:String>Concatenation of string with a long string
+
+Line 1</System:String>
+</Value>
+</Actions:ValueExpressionAction>
+</Actions>
+<Actions>
+<Actions:ValueExpressionAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Value>
+<System:String>
+</System:String>
+</Value>
+</Actions:ValueExpressionAction>
+</Actions>
+<Actions>
+<Actions:ValueExpressionAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Value>
+<System:String>Line 2</System:String>
+</Value>
+</Actions:ValueExpressionAction>
+</Actions>
+</Actions:ConcatenateExpressionAction>
+</RightContent>
+</Actions:SetAction>
+</Actions>
+<Actions>
+<Actions:SetAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<LeftContent>
+<Actions:ObjectPropertyReferenceExpressionAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Target>
+<Wherigo:WigoItem xsi:nil="true" ref="key10" />
+</Target>
+<Property>
+<System:String>Description</System:String>
+</Property>
+</Actions:ObjectPropertyReferenceExpressionAction>
+</LeftContent>
+<RightContent>
+<Actions:ConcatenateExpressionAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Actions>
+<Actions:ValueExpressionAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Value>
+<System:String>Concatenation of string with a long string from variable
+
+Line 1</System:String>
+</Value>
+</Actions:ValueExpressionAction>
+</Actions>
+<Actions>
+<Actions:ObjectReferenceExpressionAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Target>
+<Wherigo:WigoVariable xsi:nil="true" ref="key11" />
+</Target>
+</Actions:ObjectReferenceExpressionAction>
+</Actions>
+<Actions>
+<Actions:ValueExpressionAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Value>
+<System:String>Line 2</System:String>
+</Value>
+</Actions:ValueExpressionAction>
+</Actions>
+</Actions:ConcatenateExpressionAction>
+</RightContent>
+</Actions:SetAction>
+</Actions>
+<Owner>
+<Wherigo:WigoCartridge xsi:nil="true" ref="key12" />
+</Owner>
+</Actions:EventAction>
+</StartAction>
+<EndAction>
+<Actions:EventAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Owner>
+<Wherigo:WigoCartridge xsi:nil="true" ref="key12" />
+</Owner>
+</Actions:EventAction>
+</EndAction>
+<ResumeAction>
+<Actions:EventAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Owner>
+<Wherigo:WigoCartridge xsi:nil="true" ref="key12" />
+</Owner>
+</Actions:EventAction>
+</ResumeAction>
+<SaveAction>
+<Actions:EventAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Owner>
+<Wherigo:WigoCartridge xsi:nil="true" ref="key12" />
+</Owner>
+</Actions:EventAction>
+</SaveAction>
+<GlobalZoneEnterAction>
+<Actions:GlobalEventAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Owner>
+<Wherigo:WigoCartridge xsi:nil="true" ref="key12" />
+</Owner>
+</Actions:GlobalEventAction>
+</GlobalZoneEnterAction>
+<GlobalZoneExitAction>
+<Actions:GlobalEventAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Owner>
+<Wherigo:WigoCartridge xsi:nil="true" ref="key12" />
+</Owner>
+</Actions:GlobalEventAction>
+</GlobalZoneExitAction>
+<GlobalZoneDistantAction>
+<Actions:GlobalEventAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Owner>
+<Wherigo:WigoCartridge xsi:nil="true" ref="key12" />
+</Owner>
+</Actions:GlobalEventAction>
+</GlobalZoneDistantAction>
+<GlobalZoneProximityAction>
+<Actions:GlobalEventAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Owner>
+<Wherigo:WigoCartridge xsi:nil="true" ref="key12" />
+</Owner>
+</Actions:GlobalEventAction>
+</GlobalZoneProximityAction>
+<GlobalZoneActiveChangedAction>
+<Actions:GlobalEventAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Owner>
+<Wherigo:WigoCartridge xsi:nil="true" ref="key12" />
+</Owner>
+</Actions:GlobalEventAction>
+</GlobalZoneActiveChangedAction>
+<UserDirectives>
+<System:String xsi:nil="true" />
+</UserDirectives>
+<UserFunctions>
+<System:String>CR = [[
+]]</System:String>
+</UserFunctions>
+</Wherigo:WigoCartridge>
