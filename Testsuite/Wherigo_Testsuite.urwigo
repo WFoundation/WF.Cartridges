@@ -40,7 +40,7 @@
 <System:DateTime>12/15/2011 14:05:43</System:DateTime>
 </CreateDate>
 <UpdateDate>
-<System:DateTime>02/02/2014 00:09:38</System:DateTime>
+<System:DateTime>02/03/2014 21:03:11</System:DateTime>
 </UpdateDate>
 <Complete>
 <System:Boolean>False</System:Boolean>
@@ -313,7 +313,7 @@
 </Wherigo:WigoMedia>
 </Media>
 <Media>
-<Wherigo:WigoMedia key="key81">
+<Wherigo:WigoMedia key="key82">
 <Identifier>
 <System:String xsi:nil="true" />
 </Identifier>
@@ -377,7 +377,7 @@
 </Wherigo:WigoMedia>
 </Media>
 <Media>
-<Wherigo:WigoMedia key="key70">
+<Wherigo:WigoMedia key="key71">
 <Identifier>
 <System:String xsi:nil="true" />
 </Identifier>
@@ -409,7 +409,7 @@
 </Wherigo:WigoMedia>
 </Media>
 <Media>
-<Wherigo:WigoMedia key="key72">
+<Wherigo:WigoMedia key="key73">
 <Identifier>
 <System:String xsi:nil="true" />
 </Identifier>
@@ -441,7 +441,7 @@
 </Wherigo:WigoMedia>
 </Media>
 <Media>
-<Wherigo:WigoMedia key="key74">
+<Wherigo:WigoMedia key="key75">
 <Identifier>
 <System:String xsi:nil="true" />
 </Identifier>
@@ -1011,35 +1011,6 @@
 </Actions:SnippetAction>
 </Actions>
 <Actions>
-<Actions:MessageBoxAction>
-<Enabled>
-<System:Boolean>True</System:Boolean>
-</Enabled>
-<Text>
-<Actions:ValueExpressionAction>
-<Enabled>
-<System:Boolean>True</System:Boolean>
-</Enabled>
-<Value>
-<System:String>The zone was now set. You can enter and make your tests. Besides you have got an item "Bearing". It shows the distance and bearing in degrees to the center of the zone.</System:String>
-</Value>
-</Actions:ValueExpressionAction>
-</Text>
-<Media>
-<Wherigo:WigoMedia xsi:nil="true" />
-</Media>
-<Button1Text>
-<System:String xsi:nil="true" />
-</Button1Text>
-<Button2Text>
-<System:String xsi:nil="true" />
-</Button2Text>
-<ButtonClickedAction>
-<Actions:DoAction>
-<Enabled>
-<System:Boolean>True</System:Boolean>
-</Enabled>
-<Actions>
 <Actions:MoveAction>
 <Enabled>
 <System:Boolean>True</System:Boolean>
@@ -1070,7 +1041,7 @@
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Target>
-<Wherigo:WigoItem key="key7">
+<Wherigo:WigoItem key="key5">
 <Identifier>
 <System:String xsi:nil="true" />
 </Identifier>
@@ -1078,7 +1049,7 @@
 <System:String>Bearing</System:String>
 </Name>
 <Description>
-<System:String>If your playerzone is active, these item shows bearing and distance to the CENTER of the zone. Because of performance, only every 3 seconds a measure will be made and shows the values.</System:String>
+<System:String>If your playerzone is active, these item shows bearing and distance to the CENTER of the zone. Every 2 seconds a measure will be made and shows the values.</System:String>
 </Description>
 <Visible>
 <System:Boolean>True</System:Boolean>
@@ -1093,7 +1064,7 @@
 <Wherigo:WigoObjectLocation xsi:nil="true" />
 </ObjectLocation>
 <Commands>
-<Wherigo:WigoCommand key="key5">
+<Wherigo:WigoCommand key="key6">
 <Identifier>
 <System:String xsi:nil="true" />
 </Identifier>
@@ -1125,7 +1096,37 @@
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Target>
-<Wherigo:WigoCommand xsi:nil="true" ref="key5" />
+<Wherigo:WigoItem xsi:nil="true" ref="key5" />
+</Target>
+<Property>
+<System:String>Description</System:String>
+</Property>
+</Actions:ObjectPropertyReferenceExpressionAction>
+</LeftContent>
+<RightContent>
+<Actions:ValueExpressionAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Value>
+<System:String>Process started, waiting for data ...</System:String>
+</Value>
+</Actions:ValueExpressionAction>
+</RightContent>
+</Actions:SetAction>
+</Actions>
+<Actions>
+<Actions:SetAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<LeftContent>
+<Actions:ObjectPropertyReferenceExpressionAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Target>
+<Wherigo:WigoCommand xsi:nil="true" ref="key6" />
 </Target>
 <Property>
 <System:String>Enabled</System:String>
@@ -1187,7 +1188,7 @@
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Target>
-<Wherigo:WigoTimer key="key6">
+<Wherigo:WigoTimer key="key7">
 <Identifier>
 <System:String xsi:nil="true" />
 </Identifier>
@@ -1201,7 +1202,7 @@
 <Wherigo:WigoTimerType>Interval</Wherigo:WigoTimerType>
 </Type>
 <Duration>
-<System:Double>3</System:Double>
+<System:Double>2</System:Double>
 </Duration>
 <StartAction>
 <Actions:EventAction>
@@ -1219,7 +1220,7 @@
 </Actions:CommentAction>
 </Actions>
 <Owner>
-<Wherigo:WigoTimer xsi:nil="true" ref="key6" />
+<Wherigo:WigoTimer xsi:nil="true" ref="key7" />
 </Owner>
 </Actions:EventAction>
 </StartAction>
@@ -1229,7 +1230,7 @@
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Owner>
-<Wherigo:WigoTimer xsi:nil="true" ref="key6" />
+<Wherigo:WigoTimer xsi:nil="true" ref="key7" />
 </Owner>
 </Actions:EventAction>
 </StopAction>
@@ -1249,7 +1250,7 @@
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Target>
-<Wherigo:WigoItem xsi:nil="true" ref="key7" />
+<Wherigo:WigoItem xsi:nil="true" ref="key5" />
 </Target>
 <Property>
 <System:String>Description</System:String>
@@ -1267,7 +1268,19 @@
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Value>
-<System:String>Dist. to target : </System:String>
+<System:String>Bearing is running ...</System:String>
+</Value>
+</Actions:ValueExpressionAction>
+</Actions>
+<Actions>
+<Actions:ValueExpressionAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Value>
+<System:String>
+
+Distance to target : </System:String>
 </Value>
 </Actions:ValueExpressionAction>
 </Actions>
@@ -1369,9 +1382,7 @@ Accuracy : </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Value>
-<System:String> m
-
-Bearing is running ...</System:String>
+<System:String> m</System:String>
 </Value>
 </Actions:ValueExpressionAction>
 </Actions>
@@ -1380,7 +1391,7 @@ Bearing is running ...</System:String>
 </Actions:SetAction>
 </Actions>
 <Owner>
-<Wherigo:WigoTimer xsi:nil="true" ref="key6" />
+<Wherigo:WigoTimer xsi:nil="true" ref="key7" />
 </Owner>
 </Actions:EventAction>
 </TickAction>
@@ -1401,7 +1412,7 @@ Bearing is running ...</System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Target>
-<Wherigo:WigoCommand xsi:nil="true" ref="key5" />
+<Wherigo:WigoCommand xsi:nil="true" ref="key6" />
 </Target>
 <Property>
 <System:String>Enabled</System:String>
@@ -1461,7 +1472,7 @@ Bearing is running ...</System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Target>
-<Wherigo:WigoItem xsi:nil="true" ref="key7" />
+<Wherigo:WigoItem xsi:nil="true" ref="key5" />
 </Target>
 <Property>
 <System:String>Description</System:String>
@@ -1515,14 +1526,14 @@ Bearing is running ...</System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Target>
-<Wherigo:WigoTimer xsi:nil="true" ref="key6" />
+<Wherigo:WigoTimer xsi:nil="true" ref="key7" />
 </Target>
 </Actions:ObjectExpressionAction>
 </TimerContent>
 </Actions:TimerStartAction>
 </Actions>
 <Owner>
-<Wherigo:WigoCommand xsi:nil="true" ref="key5" />
+<Wherigo:WigoCommand xsi:nil="true" ref="key6" />
 </Owner>
 </Actions:EventAction>
 </ExecuteAction>
@@ -1537,7 +1548,7 @@ Bearing is running ...</System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Owner>
-<Wherigo:WigoItem xsi:nil="true" ref="key7" />
+<Wherigo:WigoItem xsi:nil="true" ref="key5" />
 </Owner>
 </Actions:EventAction>
 </ClickAction>
@@ -1563,6 +1574,35 @@ Bearing is running ...</System:String>
 </ContainerContent>
 </Actions:MoveAction>
 </Actions>
+<Actions>
+<Actions:MessageBoxAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Text>
+<Actions:ValueExpressionAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Value>
+<System:String>The zone was now set. You can enter and make your tests. Besides you have got an item "Bearing". It shows the distance and bearing in degrees to the center of the zone.</System:String>
+</Value>
+</Actions:ValueExpressionAction>
+</Text>
+<Media>
+<Wherigo:WigoMedia xsi:nil="true" />
+</Media>
+<Button1Text>
+<System:String xsi:nil="true" />
+</Button1Text>
+<Button2Text>
+<System:String xsi:nil="true" />
+</Button2Text>
+<ButtonClickedAction>
+<Actions:DoAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
 <Actions>
 <Actions:ShowScreenAction>
 <Enabled>
@@ -3064,7 +3104,7 @@ If you click CANCEL you can search for another location and make a new try somew
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Value>
-<System:String key="key83">This is the task, with the toggle task item you can set its status complete, incomplete, correct, not correct and set correction to none. I think the correction flag does not work !?</System:String>
+<System:String key="key84">This is the task, with the toggle task item you can set its status complete, incomplete, correct, not correct and set correction to none. I think the correction flag does not work !?</System:String>
 </Value>
 </Actions:ValueExpressionAction>
 </Actions>
@@ -6315,10 +6355,10 @@ If you click CANCEL you can search for another location and make a new try somew
 <Wherigo:WigoItem xsi:nil="true" ref="key29" />
 </Items>
 <Items>
-<Wherigo:WigoItem xsi:nil="true" ref="key7" />
+<Wherigo:WigoItem xsi:nil="true" ref="key5" />
 </Items>
 <Items>
-<Wherigo:WigoItem key="key58">
+<Wherigo:WigoItem key="key59">
 <Identifier>
 <System:String xsi:nil="true" />
 </Identifier>
@@ -6326,7 +6366,7 @@ If you click CANCEL you can search for another location and make a new try somew
 <System:String>Tools</System:String>
 </Name>
 <Description>
-<System:String>There are some tools to check whether the device or player are working correct or compare differences between players. If you hear no sound, your player settings are not ok. Note : These function does not work on garmin devices.</System:String>
+<System:String>There are some tools to check whether the device or player are working correct or compare differences between players. If you hear nothing on the sound tests, your player settings are not ok. Note : These function does not work on garmin devices.</System:String>
 </Description>
 <Visible>
 <System:Boolean>True</System:Boolean>
@@ -7298,6 +7338,89 @@ Version : </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Actions>
+<Actions:IfElseAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Actions>
+<Actions:IfElseBranchAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Actions>
+<Actions:MessageBoxAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Text>
+<Actions:ValueExpressionAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Value>
+<System:String>Sorry, this feature is not for garmin devices.</System:String>
+</Value>
+</Actions:ValueExpressionAction>
+</Text>
+<Media>
+<Wherigo:WigoMedia xsi:nil="true" />
+</Media>
+<Button1Text>
+<System:String xsi:nil="true" />
+</Button1Text>
+<Button2Text>
+<System:String xsi:nil="true" />
+</Button2Text>
+<ButtonClickedAction>
+<Actions:DoAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+</Actions:DoAction>
+</ButtonClickedAction>
+</Actions:MessageBoxAction>
+</Actions>
+<Condition>
+<Actions:CompareExpressionAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Operator>
+<Actions:CompareExpressionOperator>Equal</Actions:CompareExpressionOperator>
+</Operator>
+<LeftContent>
+<Actions:ObjectPropertyReferenceExpressionAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Target>
+<Wherigo:WigoEnvironment xsi:nil="true" ref="key50" />
+</Target>
+<Property>
+<System:String>Platform</System:String>
+</Property>
+</Actions:ObjectPropertyReferenceExpressionAction>
+</LeftContent>
+<RightContent>
+<Actions:ValueExpressionAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Value>
+<System:String>Vendor 1 ARM9</System:String>
+</Value>
+</Actions:ValueExpressionAction>
+</RightContent>
+</Actions:CompareExpressionAction>
+</Condition>
+</Actions:IfElseBranchAction>
+</Actions>
+<Actions>
+<Actions:IfElseBranchAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Actions>
 <Actions:MessageBoxAction>
 <Enabled>
 <System:Boolean>True</System:Boolean>
@@ -7420,6 +7543,13 @@ Version : </System:String>
 </ButtonClickedAction>
 </Actions:MessageBoxAction>
 </Actions>
+<Condition>
+<Actions:IExpressionAction xsi:nil="true" />
+</Condition>
+</Actions:IfElseBranchAction>
+</Actions>
+</Actions:IfElseAction>
+</Actions>
 <Owner>
 <Wherigo:WigoCommand xsi:nil="true" ref="key55" />
 </Owner>
@@ -7446,6 +7576,89 @@ Version : </System:String>
 </Targets>
 <ExecuteAction>
 <Actions:EventAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Actions>
+<Actions:IfElseAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Actions>
+<Actions:IfElseBranchAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Actions>
+<Actions:MessageBoxAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Text>
+<Actions:ValueExpressionAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Value>
+<System:String>Sorry, this feature is not for garmin devices.</System:String>
+</Value>
+</Actions:ValueExpressionAction>
+</Text>
+<Media>
+<Wherigo:WigoMedia xsi:nil="true" />
+</Media>
+<Button1Text>
+<System:String xsi:nil="true" />
+</Button1Text>
+<Button2Text>
+<System:String xsi:nil="true" />
+</Button2Text>
+<ButtonClickedAction>
+<Actions:DoAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+</Actions:DoAction>
+</ButtonClickedAction>
+</Actions:MessageBoxAction>
+</Actions>
+<Condition>
+<Actions:CompareExpressionAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Operator>
+<Actions:CompareExpressionOperator>Equal</Actions:CompareExpressionOperator>
+</Operator>
+<LeftContent>
+<Actions:ObjectPropertyReferenceExpressionAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Target>
+<Wherigo:WigoEnvironment xsi:nil="true" ref="key50" />
+</Target>
+<Property>
+<System:String>Platform</System:String>
+</Property>
+</Actions:ObjectPropertyReferenceExpressionAction>
+</LeftContent>
+<RightContent>
+<Actions:ValueExpressionAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Value>
+<System:String>Vendor 1 ARM9</System:String>
+</Value>
+</Actions:ValueExpressionAction>
+</RightContent>
+</Actions:CompareExpressionAction>
+</Condition>
+</Actions:IfElseBranchAction>
+</Actions>
+<Actions>
+<Actions:IfElseBranchAction>
 <Enabled>
 <System:Boolean>True</System:Boolean>
 </Enabled>
@@ -7582,8 +7795,167 @@ Version : </System:String>
 </ButtonClickedAction>
 </Actions:MessageBoxAction>
 </Actions>
+<Condition>
+<Actions:IExpressionAction xsi:nil="true" />
+</Condition>
+</Actions:IfElseBranchAction>
+</Actions>
+</Actions:IfElseAction>
+</Actions>
 <Owner>
 <Wherigo:WigoCommand xsi:nil="true" ref="key57" />
+</Owner>
+</Actions:EventAction>
+</ExecuteAction>
+</Wherigo:WigoCommand>
+</Commands>
+<Commands>
+<Wherigo:WigoCommand key="key58">
+<Identifier>
+<System:String xsi:nil="true" />
+</Identifier>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Name>
+<System:String>Background flashes</System:String>
+</Name>
+<EmptyTargetListText>
+<System:String>Nothing available</System:String>
+</EmptyTargetListText>
+<Targets>
+<Wherigo:WigoCommandTargets>None</Wherigo:WigoCommandTargets>
+</Targets>
+<ExecuteAction>
+<Actions:EventAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Actions>
+<Actions:DialogAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Actions>
+<Actions:DialogEntryAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Text>
+<Actions:ValueExpressionAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Value>
+<System:String>On multimessages or dialogs it may be, that the backgound very shortly flashes between 2 messages. Click 5 times and look how your player reacts between 2 message screens. Does it shortly flash or is it a smooth sequenz ?</System:String>
+</Value>
+</Actions:ValueExpressionAction>
+</Text>
+<Media>
+<Wherigo:WigoMedia xsi:nil="true" />
+</Media>
+</Actions:DialogEntryAction>
+</Actions>
+<Actions>
+<Actions:DialogEntryAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Text>
+<Actions:ValueExpressionAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Value>
+<System:String>Does the background shortly flashes ? You have 4 clicks remaining ....</System:String>
+</Value>
+</Actions:ValueExpressionAction>
+</Text>
+<Media>
+<Wherigo:WigoMedia xsi:nil="true" />
+</Media>
+</Actions:DialogEntryAction>
+</Actions>
+<Actions>
+<Actions:DialogEntryAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Text>
+<Actions:ValueExpressionAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Value>
+<System:String>Does the background shortly flashes ? You have 3 clicks remaining ....</System:String>
+</Value>
+</Actions:ValueExpressionAction>
+</Text>
+<Media>
+<Wherigo:WigoMedia xsi:nil="true" />
+</Media>
+</Actions:DialogEntryAction>
+</Actions>
+<Actions>
+<Actions:DialogEntryAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Text>
+<Actions:ValueExpressionAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Value>
+<System:String>Does the background shortly flashes ? You have 2 clicks remaining ....</System:String>
+</Value>
+</Actions:ValueExpressionAction>
+</Text>
+<Media>
+<Wherigo:WigoMedia xsi:nil="true" />
+</Media>
+</Actions:DialogEntryAction>
+</Actions>
+<Actions>
+<Actions:DialogEntryAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Text>
+<Actions:ValueExpressionAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Value>
+<System:String>Your last click ...</System:String>
+</Value>
+</Actions:ValueExpressionAction>
+</Text>
+<Media>
+<Wherigo:WigoMedia xsi:nil="true" />
+</Media>
+</Actions:DialogEntryAction>
+</Actions>
+<Button1Text>
+<System:String xsi:nil="true" />
+</Button1Text>
+<Button2Text>
+<System:String xsi:nil="true" />
+</Button2Text>
+<ButtonClickedAction>
+<Actions:DoAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+</Actions:DoAction>
+</ButtonClickedAction>
+<Buffered>
+<System:Boolean>False</System:Boolean>
+</Buffered>
+</Actions:DialogAction>
+</Actions>
+<Owner>
+<Wherigo:WigoCommand xsi:nil="true" ref="key58" />
 </Owner>
 </Actions:EventAction>
 </ExecuteAction>
@@ -7595,7 +7967,7 @@ Version : </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Owner>
-<Wherigo:WigoItem xsi:nil="true" ref="key58" />
+<Wherigo:WigoItem xsi:nil="true" ref="key59" />
 </Owner>
 </Actions:EventAction>
 </ClickAction>
@@ -7608,7 +7980,7 @@ Version : </System:String>
 </Wherigo:WigoItem>
 </Items>
 <Items>
-<Wherigo:WigoItem key="key65">
+<Wherigo:WigoItem key="key66">
 <Identifier>
 <System:String xsi:nil="true" />
 </Identifier>
@@ -7638,7 +8010,7 @@ Version : </System:String>
 </Wherigo:WigoObjectLocation>
 </ObjectLocation>
 <Commands>
-<Wherigo:WigoCommand key="key60">
+<Wherigo:WigoCommand key="key61">
 <Identifier>
 <System:String xsi:nil="true" />
 </Identifier>
@@ -7726,7 +8098,7 @@ Version : </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Target>
-<Wherigo:WigoTimer key="key59">
+<Wherigo:WigoTimer key="key60">
 <Identifier>
 <System:String xsi:nil="true" />
 </Identifier>
@@ -7748,7 +8120,7 @@ Version : </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Owner>
-<Wherigo:WigoTimer xsi:nil="true" ref="key59" />
+<Wherigo:WigoTimer xsi:nil="true" ref="key60" />
 </Owner>
 </Actions:EventAction>
 </StartAction>
@@ -7758,7 +8130,7 @@ Version : </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Owner>
-<Wherigo:WigoTimer xsi:nil="true" ref="key59" />
+<Wherigo:WigoTimer xsi:nil="true" ref="key60" />
 </Owner>
 </Actions:EventAction>
 </StopAction>
@@ -7858,7 +8230,7 @@ Version : </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Target>
-<Wherigo:WigoTimer xsi:nil="true" ref="key59" />
+<Wherigo:WigoTimer xsi:nil="true" ref="key60" />
 </Target>
 </Actions:ObjectExpressionAction>
 </TimerContent>
@@ -7942,7 +8314,7 @@ Version : </System:String>
 </Actions:IfElseAction>
 </Actions>
 <Owner>
-<Wherigo:WigoTimer xsi:nil="true" ref="key59" />
+<Wherigo:WigoTimer xsi:nil="true" ref="key60" />
 </Owner>
 </Actions:EventAction>
 </TickAction>
@@ -7957,14 +8329,14 @@ Version : </System:String>
 </Actions:MessageBoxAction>
 </Actions>
 <Owner>
-<Wherigo:WigoCommand xsi:nil="true" ref="key60" />
+<Wherigo:WigoCommand xsi:nil="true" ref="key61" />
 </Owner>
 </Actions:EventAction>
 </ExecuteAction>
 </Wherigo:WigoCommand>
 </Commands>
 <Commands>
-<Wherigo:WigoCommand key="key64">
+<Wherigo:WigoCommand key="key65">
 <Identifier>
 <System:String xsi:nil="true" />
 </Identifier>
@@ -8023,7 +8395,7 @@ Version : </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Target>
-<Wherigo:WigoItem key="key63">
+<Wherigo:WigoItem key="key64">
 <Identifier>
 <System:String xsi:nil="true" />
 </Identifier>
@@ -8053,7 +8425,7 @@ Version : </System:String>
 </Wherigo:WigoObjectLocation>
 </ObjectLocation>
 <Commands>
-<Wherigo:WigoCommand key="key62">
+<Wherigo:WigoCommand key="key63">
 <Identifier>
 <System:String xsi:nil="true" />
 </Identifier>
@@ -8085,7 +8457,7 @@ Version : </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Target>
-<Wherigo:WigoTimer key="key61">
+<Wherigo:WigoTimer key="key62">
 <Identifier>
 <System:String xsi:nil="true" />
 </Identifier>
@@ -8107,7 +8479,7 @@ Version : </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Owner>
-<Wherigo:WigoTimer xsi:nil="true" ref="key61" />
+<Wherigo:WigoTimer xsi:nil="true" ref="key62" />
 </Owner>
 </Actions:EventAction>
 </StartAction>
@@ -8117,7 +8489,7 @@ Version : </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Owner>
-<Wherigo:WigoTimer xsi:nil="true" ref="key61" />
+<Wherigo:WigoTimer xsi:nil="true" ref="key62" />
 </Owner>
 </Actions:EventAction>
 </StopAction>
@@ -8167,7 +8539,7 @@ Version : </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Target>
-<Wherigo:WigoTimer xsi:nil="true" ref="key61" />
+<Wherigo:WigoTimer xsi:nil="true" ref="key62" />
 </Target>
 </Actions:ObjectExpressionAction>
 </TimerContent>
@@ -8184,7 +8556,7 @@ Version : </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Target>
-<Wherigo:WigoCommand xsi:nil="true" ref="key62" />
+<Wherigo:WigoCommand xsi:nil="true" ref="key63" />
 </Target>
 <Property>
 <System:String>Enabled</System:String>
@@ -8214,7 +8586,7 @@ Version : </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Target>
-<Wherigo:WigoItem xsi:nil="true" ref="key63" />
+<Wherigo:WigoItem xsi:nil="true" ref="key64" />
 </Target>
 <Property>
 <System:String>Description</System:String>
@@ -8341,7 +8713,7 @@ Version : </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Target>
-<Wherigo:WigoItem xsi:nil="true" ref="key63" />
+<Wherigo:WigoItem xsi:nil="true" ref="key64" />
 </Target>
 <Property>
 <System:String>Description</System:String>
@@ -8455,7 +8827,7 @@ Version : </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Target>
-<Wherigo:WigoItem xsi:nil="true" ref="key63" />
+<Wherigo:WigoItem xsi:nil="true" ref="key64" />
 </Target>
 <Property>
 <System:String>Description</System:String>
@@ -8553,7 +8925,7 @@ Version : </System:String>
 </Actions:IfElseAction>
 </Actions>
 <Owner>
-<Wherigo:WigoTimer xsi:nil="true" ref="key61" />
+<Wherigo:WigoTimer xsi:nil="true" ref="key62" />
 </Owner>
 </Actions:EventAction>
 </TickAction>
@@ -8601,7 +8973,7 @@ Version : </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Target>
-<Wherigo:WigoCommand xsi:nil="true" ref="key62" />
+<Wherigo:WigoCommand xsi:nil="true" ref="key63" />
 </Target>
 <Property>
 <System:String>Enabled</System:String>
@@ -8631,7 +9003,7 @@ Version : </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Target>
-<Wherigo:WigoItem xsi:nil="true" ref="key63" />
+<Wherigo:WigoItem xsi:nil="true" ref="key64" />
 </Target>
 <Property>
 <System:String>Visible</System:String>
@@ -8661,7 +9033,7 @@ Version : </System:String>
 </Actions:ShowScreenAction>
 </Actions>
 <Owner>
-<Wherigo:WigoCommand xsi:nil="true" ref="key62" />
+<Wherigo:WigoCommand xsi:nil="true" ref="key63" />
 </Owner>
 </Actions:EventAction>
 </ExecuteAction>
@@ -8673,7 +9045,7 @@ Version : </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Owner>
-<Wherigo:WigoItem xsi:nil="true" ref="key63" />
+<Wherigo:WigoItem xsi:nil="true" ref="key64" />
 </Owner>
 </Actions:EventAction>
 </ClickAction>
@@ -8742,7 +9114,7 @@ Version : </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Target>
-<Wherigo:WigoItem xsi:nil="true" ref="key63" />
+<Wherigo:WigoItem xsi:nil="true" ref="key64" />
 </Target>
 <Property>
 <System:String>Visible</System:String>
@@ -8772,7 +9144,7 @@ Version : </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Target>
-<Wherigo:WigoItem xsi:nil="true" ref="key63" />
+<Wherigo:WigoItem xsi:nil="true" ref="key64" />
 </Target>
 </Actions:ObjectExpressionAction>
 </Target>
@@ -8789,7 +9161,7 @@ Version : </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Target>
-<Wherigo:WigoTimer xsi:nil="true" ref="key61" />
+<Wherigo:WigoTimer xsi:nil="true" ref="key62" />
 </Target>
 </Actions:ObjectExpressionAction>
 </TimerContent>
@@ -8800,7 +9172,7 @@ Version : </System:String>
 </Actions:MessageBoxAction>
 </Actions>
 <Owner>
-<Wherigo:WigoCommand xsi:nil="true" ref="key64" />
+<Wherigo:WigoCommand xsi:nil="true" ref="key65" />
 </Owner>
 </Actions:EventAction>
 </ExecuteAction>
@@ -8812,7 +9184,7 @@ Version : </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Owner>
-<Wherigo:WigoItem xsi:nil="true" ref="key65" />
+<Wherigo:WigoItem xsi:nil="true" ref="key66" />
 </Owner>
 </Actions:EventAction>
 </ClickAction>
@@ -8825,10 +9197,10 @@ Version : </System:String>
 </Wherigo:WigoItem>
 </Items>
 <Items>
-<Wherigo:WigoItem xsi:nil="true" ref="key63" />
+<Wherigo:WigoItem xsi:nil="true" ref="key64" />
 </Items>
 <Items>
-<Wherigo:WigoItem key="key69">
+<Wherigo:WigoItem key="key70">
 <Identifier>
 <System:String xsi:nil="true" />
 </Identifier>
@@ -8858,7 +9230,7 @@ Version : </System:String>
 </Wherigo:WigoObjectLocation>
 </ObjectLocation>
 <Commands>
-<Wherigo:WigoCommand key="key66">
+<Wherigo:WigoCommand key="key67">
 <Identifier>
 <System:String xsi:nil="true" />
 </Identifier>
@@ -8867,68 +9239,6 @@ Version : </System:String>
 </Enabled>
 <Name>
 <System:String>Let it ring</System:String>
-</Name>
-<EmptyTargetListText>
-<System:String>Nothing available</System:String>
-</EmptyTargetListText>
-<Targets>
-<Wherigo:WigoCommandTargets>None</Wherigo:WigoCommandTargets>
-</Targets>
-<ExecuteAction>
-<Actions:EventAction>
-<Enabled>
-<System:Boolean>True</System:Boolean>
-</Enabled>
-<Actions>
-<Actions:SetAction>
-<Enabled>
-<System:Boolean>True</System:Boolean>
-</Enabled>
-<LeftContent>
-<Actions:ObjectPropertyReferenceExpressionAction>
-<Enabled>
-<System:Boolean>True</System:Boolean>
-</Enabled>
-<Target>
-<Wherigo:WigoCommand xsi:nil="true" ref="key66" />
-</Target>
-<Property>
-<System:String>Enabled</System:String>
-</Property>
-</Actions:ObjectPropertyReferenceExpressionAction>
-</LeftContent>
-<RightContent>
-<Actions:ValueExpressionAction>
-<Enabled>
-<System:Boolean>True</System:Boolean>
-</Enabled>
-<Value>
-<System:Boolean>False</System:Boolean>
-</Value>
-</Actions:ValueExpressionAction>
-</RightContent>
-</Actions:SetAction>
-</Actions>
-<Actions>
-<Actions:SetAction>
-<Enabled>
-<System:Boolean>True</System:Boolean>
-</Enabled>
-<LeftContent>
-<Actions:ObjectPropertyReferenceExpressionAction>
-<Enabled>
-<System:Boolean>True</System:Boolean>
-</Enabled>
-<Target>
-<Wherigo:WigoCommand key="key67">
-<Identifier>
-<System:String xsi:nil="true" />
-</Identifier>
-<Enabled>
-<System:Boolean>False</System:Boolean>
-</Enabled>
-<Name>
-<System:String>Stop</System:String>
 </Name>
 <EmptyTargetListText>
 <System:String>Nothing available</System:String>
@@ -8982,7 +9292,69 @@ Version : </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Target>
-<Wherigo:WigoCommand xsi:nil="true" ref="key66" />
+<Wherigo:WigoCommand key="key68">
+<Identifier>
+<System:String xsi:nil="true" />
+</Identifier>
+<Enabled>
+<System:Boolean>False</System:Boolean>
+</Enabled>
+<Name>
+<System:String>Stop</System:String>
+</Name>
+<EmptyTargetListText>
+<System:String>Nothing available</System:String>
+</EmptyTargetListText>
+<Targets>
+<Wherigo:WigoCommandTargets>None</Wherigo:WigoCommandTargets>
+</Targets>
+<ExecuteAction>
+<Actions:EventAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Actions>
+<Actions:SetAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<LeftContent>
+<Actions:ObjectPropertyReferenceExpressionAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Target>
+<Wherigo:WigoCommand xsi:nil="true" ref="key68" />
+</Target>
+<Property>
+<System:String>Enabled</System:String>
+</Property>
+</Actions:ObjectPropertyReferenceExpressionAction>
+</LeftContent>
+<RightContent>
+<Actions:ValueExpressionAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Value>
+<System:Boolean>False</System:Boolean>
+</Value>
+</Actions:ValueExpressionAction>
+</RightContent>
+</Actions:SetAction>
+</Actions>
+<Actions>
+<Actions:SetAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<LeftContent>
+<Actions:ObjectPropertyReferenceExpressionAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Target>
+<Wherigo:WigoCommand xsi:nil="true" ref="key67" />
 </Target>
 <Property>
 <System:String>Enabled</System:String>
@@ -9019,7 +9391,7 @@ Version : </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Target>
-<Wherigo:WigoTimer key="key68">
+<Wherigo:WigoTimer key="key69">
 <Identifier>
 <System:String xsi:nil="true" />
 </Identifier>
@@ -9041,7 +9413,7 @@ Version : </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Owner>
-<Wherigo:WigoTimer xsi:nil="true" ref="key68" />
+<Wherigo:WigoTimer xsi:nil="true" ref="key69" />
 </Owner>
 </Actions:EventAction>
 </StartAction>
@@ -9051,7 +9423,7 @@ Version : </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Owner>
-<Wherigo:WigoTimer xsi:nil="true" ref="key68" />
+<Wherigo:WigoTimer xsi:nil="true" ref="key69" />
 </Owner>
 </Actions:EventAction>
 </StopAction>
@@ -9078,7 +9450,7 @@ Version : </System:String>
 </Actions:PlayAudioAction>
 </Actions>
 <Owner>
-<Wherigo:WigoTimer xsi:nil="true" ref="key68" />
+<Wherigo:WigoTimer xsi:nil="true" ref="key69" />
 </Owner>
 </Actions:EventAction>
 </TickAction>
@@ -9089,7 +9461,7 @@ Version : </System:String>
 </Actions:TimerStopAction>
 </Actions>
 <Owner>
-<Wherigo:WigoCommand xsi:nil="true" ref="key67" />
+<Wherigo:WigoCommand xsi:nil="true" ref="key68" />
 </Owner>
 </Actions:EventAction>
 </ExecuteAction>
@@ -9140,21 +9512,21 @@ Version : </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Target>
-<Wherigo:WigoTimer xsi:nil="true" ref="key68" />
+<Wherigo:WigoTimer xsi:nil="true" ref="key69" />
 </Target>
 </Actions:ObjectExpressionAction>
 </TimerContent>
 </Actions:TimerStartAction>
 </Actions>
 <Owner>
-<Wherigo:WigoCommand xsi:nil="true" ref="key66" />
+<Wherigo:WigoCommand xsi:nil="true" ref="key67" />
 </Owner>
 </Actions:EventAction>
 </ExecuteAction>
 </Wherigo:WigoCommand>
 </Commands>
 <Commands>
-<Wherigo:WigoCommand xsi:nil="true" ref="key67" />
+<Wherigo:WigoCommand xsi:nil="true" ref="key68" />
 </Commands>
 <ClickAction>
 <Actions:EventAction>
@@ -9162,7 +9534,7 @@ Version : </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Owner>
-<Wherigo:WigoItem xsi:nil="true" ref="key69" />
+<Wherigo:WigoItem xsi:nil="true" ref="key70" />
 </Owner>
 </Actions:EventAction>
 </ClickAction>
@@ -9175,7 +9547,7 @@ Version : </System:String>
 </Wherigo:WigoItem>
 </Items>
 <Items>
-<Wherigo:WigoItem key="key76">
+<Wherigo:WigoItem key="key77">
 <Identifier>
 <System:String xsi:nil="true" />
 </Identifier>
@@ -9205,7 +9577,7 @@ Version : </System:String>
 </Wherigo:WigoObjectLocation>
 </ObjectLocation>
 <Commands>
-<Wherigo:WigoCommand key="key71">
+<Wherigo:WigoCommand key="key72">
 <Identifier>
 <System:String xsi:nil="true" />
 </Identifier>
@@ -9242,7 +9614,7 @@ Version : </System:String>
 </Actions:ValueExpressionAction>
 </Text>
 <Media>
-<Wherigo:WigoMedia xsi:nil="true" ref="key70" />
+<Wherigo:WigoMedia xsi:nil="true" ref="key71" />
 </Media>
 <Button1Text>
 <System:String xsi:nil="true" />
@@ -9260,14 +9632,14 @@ Version : </System:String>
 </Actions:MessageBoxAction>
 </Actions>
 <Owner>
-<Wherigo:WigoCommand xsi:nil="true" ref="key71" />
+<Wherigo:WigoCommand xsi:nil="true" ref="key72" />
 </Owner>
 </Actions:EventAction>
 </ExecuteAction>
 </Wherigo:WigoCommand>
 </Commands>
 <Commands>
-<Wherigo:WigoCommand key="key73">
+<Wherigo:WigoCommand key="key74">
 <Identifier>
 <System:String xsi:nil="true" />
 </Identifier>
@@ -9304,7 +9676,7 @@ Version : </System:String>
 </Actions:ValueExpressionAction>
 </Text>
 <Media>
-<Wherigo:WigoMedia xsi:nil="true" ref="key72" />
+<Wherigo:WigoMedia xsi:nil="true" ref="key73" />
 </Media>
 <Button1Text>
 <System:String xsi:nil="true" />
@@ -9322,14 +9694,14 @@ Version : </System:String>
 </Actions:MessageBoxAction>
 </Actions>
 <Owner>
-<Wherigo:WigoCommand xsi:nil="true" ref="key73" />
+<Wherigo:WigoCommand xsi:nil="true" ref="key74" />
 </Owner>
 </Actions:EventAction>
 </ExecuteAction>
 </Wherigo:WigoCommand>
 </Commands>
 <Commands>
-<Wherigo:WigoCommand key="key75">
+<Wherigo:WigoCommand key="key76">
 <Identifier>
 <System:String xsi:nil="true" />
 </Identifier>
@@ -9366,7 +9738,7 @@ Version : </System:String>
 </Actions:ValueExpressionAction>
 </Text>
 <Media>
-<Wherigo:WigoMedia xsi:nil="true" ref="key74" />
+<Wherigo:WigoMedia xsi:nil="true" ref="key75" />
 </Media>
 <Button1Text>
 <System:String xsi:nil="true" />
@@ -9384,7 +9756,7 @@ Version : </System:String>
 </Actions:MessageBoxAction>
 </Actions>
 <Owner>
-<Wherigo:WigoCommand xsi:nil="true" ref="key75" />
+<Wherigo:WigoCommand xsi:nil="true" ref="key76" />
 </Owner>
 </Actions:EventAction>
 </ExecuteAction>
@@ -9396,7 +9768,7 @@ Version : </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Owner>
-<Wherigo:WigoItem xsi:nil="true" ref="key76" />
+<Wherigo:WigoItem xsi:nil="true" ref="key77" />
 </Owner>
 </Actions:EventAction>
 </ClickAction>
@@ -9409,7 +9781,7 @@ Version : </System:String>
 </Wherigo:WigoItem>
 </Items>
 <Items>
-<Wherigo:WigoItem key="key80">
+<Wherigo:WigoItem key="key81">
 <Identifier>
 <System:String xsi:nil="true" />
 </Identifier>
@@ -9439,7 +9811,7 @@ Version : </System:String>
 </Wherigo:WigoObjectLocation>
 </ObjectLocation>
 <Commands>
-<Wherigo:WigoCommand key="key77">
+<Wherigo:WigoCommand key="key78">
 <Identifier>
 <System:String xsi:nil="true" />
 </Identifier>
@@ -9488,7 +9860,7 @@ Version : </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Target>
-<Wherigo:WigoCommand xsi:nil="true" ref="key77" />
+<Wherigo:WigoCommand xsi:nil="true" ref="key78" />
 </Target>
 <Property>
 <System:String>Enabled</System:String>
@@ -9518,7 +9890,7 @@ Version : </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Target>
-<Wherigo:WigoCommand key="key78">
+<Wherigo:WigoCommand key="key79">
 <Identifier>
 <System:String xsi:nil="true" />
 </Identifier>
@@ -9550,7 +9922,7 @@ Version : </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Target>
-<Wherigo:WigoCommand xsi:nil="true" ref="key77" />
+<Wherigo:WigoCommand xsi:nil="true" ref="key78" />
 </Target>
 <Property>
 <System:String>Enabled</System:String>
@@ -9580,7 +9952,7 @@ Version : </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Target>
-<Wherigo:WigoCommand xsi:nil="true" ref="key78" />
+<Wherigo:WigoCommand xsi:nil="true" ref="key79" />
 </Target>
 <Property>
 <System:String>Enabled</System:String>
@@ -9617,7 +9989,7 @@ Version : </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Target>
-<Wherigo:WigoTimer key="key79">
+<Wherigo:WigoTimer key="key80">
 <Identifier>
 <System:String xsi:nil="true" />
 </Identifier>
@@ -9639,7 +10011,7 @@ Version : </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Owner>
-<Wherigo:WigoTimer xsi:nil="true" ref="key79" />
+<Wherigo:WigoTimer xsi:nil="true" ref="key80" />
 </Owner>
 </Actions:EventAction>
 </StartAction>
@@ -9649,7 +10021,7 @@ Version : </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Owner>
-<Wherigo:WigoTimer xsi:nil="true" ref="key79" />
+<Wherigo:WigoTimer xsi:nil="true" ref="key80" />
 </Owner>
 </Actions:EventAction>
 </StopAction>
@@ -9686,14 +10058,14 @@ Version : </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Target>
-<Wherigo:WigoTimer xsi:nil="true" ref="key79" />
+<Wherigo:WigoTimer xsi:nil="true" ref="key80" />
 </Target>
 </Actions:ObjectExpressionAction>
 </TimerContent>
 </Actions:TimerStartAction>
 </Actions>
 <Owner>
-<Wherigo:WigoTimer xsi:nil="true" ref="key79" />
+<Wherigo:WigoTimer xsi:nil="true" ref="key80" />
 </Owner>
 </Actions:EventAction>
 </TickAction>
@@ -9704,7 +10076,7 @@ Version : </System:String>
 </Actions:TimerStopAction>
 </Actions>
 <Owner>
-<Wherigo:WigoCommand xsi:nil="true" ref="key78" />
+<Wherigo:WigoCommand xsi:nil="true" ref="key79" />
 </Owner>
 </Actions:EventAction>
 </ExecuteAction>
@@ -9738,21 +10110,21 @@ Version : </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Target>
-<Wherigo:WigoTimer xsi:nil="true" ref="key79" />
+<Wherigo:WigoTimer xsi:nil="true" ref="key80" />
 </Target>
 </Actions:ObjectExpressionAction>
 </TimerContent>
 </Actions:TimerStartAction>
 </Actions>
 <Owner>
-<Wherigo:WigoCommand xsi:nil="true" ref="key77" />
+<Wherigo:WigoCommand xsi:nil="true" ref="key78" />
 </Owner>
 </Actions:EventAction>
 </ExecuteAction>
 </Wherigo:WigoCommand>
 </Commands>
 <Commands>
-<Wherigo:WigoCommand xsi:nil="true" ref="key78" />
+<Wherigo:WigoCommand xsi:nil="true" ref="key79" />
 </Commands>
 <ClickAction>
 <Actions:EventAction>
@@ -9760,7 +10132,7 @@ Version : </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Owner>
-<Wherigo:WigoItem xsi:nil="true" ref="key80" />
+<Wherigo:WigoItem xsi:nil="true" ref="key81" />
 </Owner>
 </Actions:EventAction>
 </ClickAction>
@@ -9781,11 +10153,68 @@ Version : </System:String>
 <Variables>
 <Wherigo:WigoVariable xsi:nil="true" ref="key17" />
 </Variables>
+<Variables>
+<Wherigo:WigoVariable>
+<Identifier>
+<System:String xsi:nil="true" />
+</Identifier>
+<Name>
+<System:String>Boolean1</System:String>
+</Name>
+<Description>
+<System:String xsi:nil="true" />
+</Description>
+<Type>
+<Wherigo:WigoVariableType>Flag</Wherigo:WigoVariableType>
+</Type>
+<Value>
+<System:Boolean>False</System:Boolean>
+</Value>
+</Wherigo:WigoVariable>
+</Variables>
+<Variables>
+<Wherigo:WigoVariable>
+<Identifier>
+<System:String xsi:nil="true" />
+</Identifier>
+<Name>
+<System:String>Boolean2</System:String>
+</Name>
+<Description>
+<System:String xsi:nil="true" />
+</Description>
+<Type>
+<Wherigo:WigoVariableType>Flag</Wherigo:WigoVariableType>
+</Type>
+<Value>
+<System:Boolean>False</System:Boolean>
+</Value>
+</Wherigo:WigoVariable>
+</Variables>
+<Variables>
+<Wherigo:WigoVariable>
+<Identifier>
+<System:String xsi:nil="true" />
+</Identifier>
+<Name>
+<System:String>Boolean3</System:String>
+</Name>
+<Description>
+<System:String xsi:nil="true" />
+</Description>
+<Type>
+<Wherigo:WigoVariableType>Flag</Wherigo:WigoVariableType>
+</Type>
+<Value>
+<System:Boolean>False</System:Boolean>
+</Value>
+</Wherigo:WigoVariable>
+</Variables>
 <Tasks>
 <Wherigo:WigoTask xsi:nil="true" ref="key11" />
 </Tasks>
 <Tasks>
-<Wherigo:WigoTask key="key82">
+<Wherigo:WigoTask key="key83">
 <Identifier>
 <System:String xsi:nil="true" />
 </Identifier>
@@ -9802,7 +10231,7 @@ Version : </System:String>
 <Wherigo:WigoMedia xsi:nil="true" />
 </Image>
 <Icon>
-<Wherigo:WigoMedia xsi:nil="true" ref="key81" />
+<Wherigo:WigoMedia xsi:nil="true" ref="key82" />
 </Icon>
 <Active>
 <System:Boolean>True</System:Boolean>
@@ -9819,7 +10248,7 @@ Version : </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Owner>
-<Wherigo:WigoTask xsi:nil="true" ref="key82" />
+<Wherigo:WigoTask xsi:nil="true" ref="key83" />
 </Owner>
 </Actions:EventAction>
 </ActiveChangedAction>
@@ -9829,7 +10258,7 @@ Version : </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Owner>
-<Wherigo:WigoTask xsi:nil="true" ref="key82" />
+<Wherigo:WigoTask xsi:nil="true" ref="key83" />
 </Owner>
 </Actions:EventAction>
 </CompleteChangedAction>
@@ -9839,7 +10268,7 @@ Version : </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Owner>
-<Wherigo:WigoTask xsi:nil="true" ref="key82" />
+<Wherigo:WigoTask xsi:nil="true" ref="key83" />
 </Owner>
 </Actions:EventAction>
 </CorrectStateChangedAction>
@@ -9849,7 +10278,7 @@ Version : </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Owner>
-<Wherigo:WigoTask xsi:nil="true" ref="key82" />
+<Wherigo:WigoTask xsi:nil="true" ref="key83" />
 </Owner>
 </Actions:EventAction>
 </ClickAction>
@@ -9874,19 +10303,19 @@ Version : </System:String>
 <Wherigo:WigoTimer xsi:nil="true" ref="key2" />
 </Timers>
 <Timers>
-<Wherigo:WigoTimer xsi:nil="true" ref="key6" />
+<Wherigo:WigoTimer xsi:nil="true" ref="key7" />
 </Timers>
 <Timers>
-<Wherigo:WigoTimer xsi:nil="true" ref="key59" />
+<Wherigo:WigoTimer xsi:nil="true" ref="key60" />
 </Timers>
 <Timers>
-<Wherigo:WigoTimer xsi:nil="true" ref="key61" />
+<Wherigo:WigoTimer xsi:nil="true" ref="key62" />
 </Timers>
 <Timers>
-<Wherigo:WigoTimer xsi:nil="true" ref="key68" />
+<Wherigo:WigoTimer xsi:nil="true" ref="key69" />
 </Timers>
 <Timers>
-<Wherigo:WigoTimer xsi:nil="true" ref="key79" />
+<Wherigo:WigoTimer xsi:nil="true" ref="key80" />
 </Timers>
 <Functions>
 <Wherigo:WigoFunction xsi:nil="true" ref="key18" />
@@ -9990,7 +10419,7 @@ Version : </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Value>
-<System:String xsi:nil="true" ref="key83" />
+<System:String xsi:nil="true" ref="key84" />
 </Value>
 </Actions:ValueExpressionAction>
 </Actions>
@@ -10054,7 +10483,7 @@ Version : </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Value>
-<System:String>A Wherigo Testsuite by jonny65</System:String>
+<System:String>The Wherigo Testsuite by jonny65</System:String>
 </Value>
 </Actions:ValueExpressionAction>
 </Actions>
@@ -10084,7 +10513,7 @@ Version : </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Value>
-<System:String>It is made to check out some typical things of a wherigo cartridge. Most of the functions can be used offline.</System:String>
+<System:String>It is made to check out some typical things used in a wherigo cartridge and also testing your current player. Some players are reacting different.</System:String>
 </Value>
 </Actions:ValueExpressionAction>
 </Actions>

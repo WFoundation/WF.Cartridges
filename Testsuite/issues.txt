@@ -1,0 +1,41 @@
+Editfield gets no focus
+An input requires that the player has to click into the editfield.
+Check it with the "Wherigo Testsuite" > Item "Inputs"
+
+Timerevent "On Start" doesn't work
+A timer from type intervall doesn't fire if an action is in the On Start event.
+Check it with the "Wherigo Testsuite" > Item "Phone 1"
+
+Intervalltimer does not stop
+If an intervall timer is started, it can not be stopped in its own cycle.
+Known issue on garmin (its always better stopping with another event), but some players work with it.
+Check it with the "Wherigo Testsuite" > Item "Timertests" > Count
+
+Picturesize not adjusting 
+Bug or feature ? ;-) Pictures keep their original dimensions.
+Bad, because there are a lot of different screen resolutions on player devices. 
+I would suggest to make it configurable that pictures keep their size or will fit to screen.
+Check it with the "Wherigo Testsuite" > Item "Picturesize"
+
+WF.Player sometimes crashes (hard)
+At start of a cartridge or while running the wf.player gets a blank screen,
+only with title (see pic attached). The player don't respond. After killing the task it is not possible to start again.
+The blank screen will be shown again. Only after rebooting the device the wf.player can be
+started again. It happens on different cartridges at different points. So its not possible
+that a certain cartridge is the reason.
+
+Unfortunately not to check and nothing informative things in the logfile.
+How about a continously written debugfile ?
+It happens not so rarely, I would say on 10 playerstarts it crashes in 2 or 3 cases.
+
+Player too large
+Seems there is the whole development studio inside the app ;-) 1 DLL (mono.android.dll) has already 17 MB !
+
+Settings and configuration missing
+There is nothing to configure
+
+Offline Map missing
+No way to show a map, neither offline nor online.
+
+https://www.dropbox.com/s/9lq0swno7uxkm9t/Wherigo_Testsuite.zip
+

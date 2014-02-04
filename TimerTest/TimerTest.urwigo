@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Wherigo:WigoCartridge xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Wherigo="clr-namespace:YourSelf.Urwigo.Wherigo;assembly=Urwigo" xmlns:System="clr-namespace:System;assembly=mscorlib" xmlns:Actions="clr-namespace:YourSelf.Urwigo.Wherigo.Actions;assembly=Urwigo" key="key13">
+<Wherigo:WigoCartridge xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Wherigo="clr-namespace:YourSelf.Urwigo.Wherigo;assembly=Urwigo" xmlns:System="clr-namespace:System;assembly=mscorlib" xmlns:Actions="clr-namespace:YourSelf.Urwigo.Wherigo.Actions;assembly=Urwigo" key="key17">
 <Identifier>
 <System:String>cartTimerTest</System:String>
 </Identifier>
@@ -51,7 +51,7 @@ Created by Jonny65</System:String>
 <System:DateTime>08/12/2012 11:22:53</System:DateTime>
 </CreateDate>
 <UpdateDate>
-<System:DateTime>01/30/2014 11:37:36</System:DateTime>
+<System:DateTime>02/03/2014 20:49:18</System:DateTime>
 </UpdateDate>
 <Complete>
 <System:Boolean>False</System:Boolean>
@@ -1068,6 +1068,317 @@ Created by Jonny65</System:String>
 </Opened>
 </Wherigo:WigoItem>
 </Items>
+<Items>
+<Wherigo:WigoItem key="key16">
+<Identifier>
+<System:String xsi:nil="true" />
+</Identifier>
+<Name>
+<System:String>Timer4</System:String>
+</Name>
+<Description>
+<System:String>Call a sound in OnStart and stop the timer in OnTick after three times</System:String>
+</Description>
+<Visible>
+<System:Boolean>True</System:Boolean>
+</Visible>
+<Image>
+<Wherigo:WigoMedia xsi:nil="true" />
+</Image>
+<Icon>
+<Wherigo:WigoMedia xsi:nil="true" />
+</Icon>
+<ObjectLocation>
+<Wherigo:WigoObjectLocation>
+<Container>
+<Wherigo:WigoPlayer xsi:nil="true" ref="key5" />
+</Container>
+<Location>
+<Wherigo:WigoCoordinate xsi:nil="true" />
+</Location>
+</Wherigo:WigoObjectLocation>
+</ObjectLocation>
+<Commands>
+<Wherigo:WigoCommand key="key15">
+<Identifier>
+<System:String xsi:nil="true" />
+</Identifier>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Name>
+<System:String>START</System:String>
+</Name>
+<EmptyTargetListText>
+<System:String>Nicht verfügbar</System:String>
+</EmptyTargetListText>
+<Targets>
+<Wherigo:WigoCommandTargets>None</Wherigo:WigoCommandTargets>
+</Targets>
+<ExecuteAction>
+<Actions:EventAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Actions>
+<Actions:TimerStartAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<TimerContent>
+<Actions:ObjectExpressionAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Target>
+<Wherigo:WigoTimer key="key13">
+<Identifier>
+<System:String xsi:nil="true" />
+</Identifier>
+<Name>
+<System:String>Timer4</System:String>
+</Name>
+<Description>
+<System:String xsi:nil="true" />
+</Description>
+<Type>
+<Wherigo:WigoTimerType>Interval</Wherigo:WigoTimerType>
+</Type>
+<Duration>
+<System:Double>4</System:Double>
+</Duration>
+<StartAction>
+<Actions:EventAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Actions>
+<Actions:PlayAudioAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<SoundContent>
+<Actions:ObjectExpressionAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Target>
+<Wherigo:WigoMedia xsi:nil="true" ref="key0" />
+</Target>
+</Actions:ObjectExpressionAction>
+</SoundContent>
+</Actions:PlayAudioAction>
+</Actions>
+<Owner>
+<Wherigo:WigoTimer xsi:nil="true" ref="key13" />
+</Owner>
+</Actions:EventAction>
+</StartAction>
+<StopAction>
+<Actions:EventAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Actions>
+<Actions:SnippetAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Value>
+<System:String>Wherigo.LogMessage("Timer4: OnStop")</System:String>
+</Value>
+</Actions:SnippetAction>
+</Actions>
+<Owner>
+<Wherigo:WigoTimer xsi:nil="true" ref="key13" />
+</Owner>
+</Actions:EventAction>
+</StopAction>
+<TickAction>
+<Actions:EventAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Actions>
+<Actions:PlayAudioAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<SoundContent>
+<Actions:ObjectExpressionAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Target>
+<Wherigo:WigoMedia xsi:nil="true" ref="key0" />
+</Target>
+</Actions:ObjectExpressionAction>
+</SoundContent>
+</Actions:PlayAudioAction>
+</Actions>
+<Actions>
+<Actions:SnippetAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Value>
+<System:String>Wherigo.LogMessage("Timer4: Tick")</System:String>
+</Value>
+</Actions:SnippetAction>
+</Actions>
+<Actions>
+<Actions:AddSubtractAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<LeftContent>
+<Actions:ObjectReferenceExpressionAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Target>
+<Wherigo:WigoVariable key="key14">
+<Identifier>
+<System:String xsi:nil="true" />
+</Identifier>
+<Name>
+<System:String>CounterTimer4</System:String>
+</Name>
+<Description>
+<System:String xsi:nil="true" />
+</Description>
+<Type>
+<Wherigo:WigoVariableType>Number</Wherigo:WigoVariableType>
+</Type>
+<Value>
+<System:Double>0</System:Double>
+</Value>
+</Wherigo:WigoVariable>
+</Target>
+</Actions:ObjectReferenceExpressionAction>
+</LeftContent>
+<Right>
+<System:Double>1</System:Double>
+</Right>
+</Actions:AddSubtractAction>
+</Actions>
+<Actions>
+<Actions:IfElseAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Actions>
+<Actions:IfElseBranchAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Actions>
+<Actions:SnippetAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Value>
+<System:String>Wherigo.LogMessage("Timer4: Before Stop")</System:String>
+</Value>
+</Actions:SnippetAction>
+</Actions>
+<Actions>
+<Actions:TimerStopAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<TimerContent>
+<Actions:ObjectExpressionAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Target>
+<Wherigo:WigoTimer xsi:nil="true" ref="key13" />
+</Target>
+</Actions:ObjectExpressionAction>
+</TimerContent>
+</Actions:TimerStopAction>
+</Actions>
+<Actions>
+<Actions:SnippetAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Value>
+<System:String>Wherigo.LogMessage("Timer4: After Stop")</System:String>
+</Value>
+</Actions:SnippetAction>
+</Actions>
+<Condition>
+<Actions:CompareExpressionAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Operator>
+<Actions:CompareExpressionOperator>GreaterEqual</Actions:CompareExpressionOperator>
+</Operator>
+<LeftContent>
+<Actions:ObjectReferenceExpressionAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Target>
+<Wherigo:WigoVariable xsi:nil="true" ref="key14" />
+</Target>
+</Actions:ObjectReferenceExpressionAction>
+</LeftContent>
+<RightContent>
+<Actions:ValueExpressionAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Value>
+<System:Double>2</System:Double>
+</Value>
+</Actions:ValueExpressionAction>
+</RightContent>
+</Actions:CompareExpressionAction>
+</Condition>
+</Actions:IfElseBranchAction>
+</Actions>
+</Actions:IfElseAction>
+</Actions>
+<Owner>
+<Wherigo:WigoTimer xsi:nil="true" ref="key13" />
+</Owner>
+</Actions:EventAction>
+</TickAction>
+</Wherigo:WigoTimer>
+</Target>
+</Actions:ObjectExpressionAction>
+</TimerContent>
+</Actions:TimerStartAction>
+</Actions>
+<Owner>
+<Wherigo:WigoCommand xsi:nil="true" ref="key15" />
+</Owner>
+</Actions:EventAction>
+</ExecuteAction>
+</Wherigo:WigoCommand>
+</Commands>
+<ClickAction>
+<Actions:EventAction>
+<Enabled>
+<System:Boolean>True</System:Boolean>
+</Enabled>
+<Owner>
+<Wherigo:WigoItem xsi:nil="true" ref="key16" />
+</Owner>
+</Actions:EventAction>
+</ClickAction>
+<Locked>
+<System:Boolean>False</System:Boolean>
+</Locked>
+<Opened>
+<System:Boolean>False</System:Boolean>
+</Opened>
+</Wherigo:WigoItem>
+</Items>
 <Variables>
 <Wherigo:WigoVariable xsi:nil="true" ref="key10" />
 </Variables>
@@ -1096,7 +1407,7 @@ Created by Jonny65</System:String>
 <System:String xsi:nil="true" />
 </Identifier>
 <Name>
-<System:String>Energypoints</System:String>
+<System:String>Counter</System:String>
 </Name>
 <Description>
 <System:String xsi:nil="true" />
@@ -1105,26 +1416,7 @@ Created by Jonny65</System:String>
 <Wherigo:WigoVariableType>Number</Wherigo:WigoVariableType>
 </Type>
 <Value>
-<System:Double>100</System:Double>
-</Value>
-</Wherigo:WigoVariable>
-</Variables>
-<Variables>
-<Wherigo:WigoVariable>
-<Identifier>
-<System:String xsi:nil="true" />
-</Identifier>
-<Name>
-<System:String>EnergyString</System:String>
-</Name>
-<Description>
-<System:String xsi:nil="true" />
-</Description>
-<Type>
-<Wherigo:WigoVariableType>String</Wherigo:WigoVariableType>
-</Type>
-<Value>
-<System:String>Meine Energie : </System:String>
+<System:Double>0</System:Double>
 </Value>
 </Wherigo:WigoVariable>
 </Variables>
@@ -1147,6 +1439,9 @@ Created by Jonny65</System:String>
 </Value>
 </Wherigo:WigoVariable>
 </Variables>
+<Variables>
+<Wherigo:WigoVariable xsi:nil="true" ref="key14" />
+</Variables>
 <Timers>
 <Wherigo:WigoTimer xsi:nil="true" ref="key1" />
 </Timers>
@@ -1155,6 +1450,9 @@ Created by Jonny65</System:String>
 </Timers>
 <Timers>
 <Wherigo:WigoTimer xsi:nil="true" ref="key9" />
+</Timers>
+<Timers>
+<Wherigo:WigoTimer xsi:nil="true" ref="key13" />
 </Timers>
 <Player>
 <Wherigo:WigoPlayer xsi:nil="true" ref="key5" />
@@ -1403,7 +1701,7 @@ Device is </System:String>
 </Actions:IfElseAction>
 </Actions>
 <Owner>
-<Wherigo:WigoCartridge xsi:nil="true" ref="key13" />
+<Wherigo:WigoCartridge xsi:nil="true" ref="key17" />
 </Owner>
 </Actions:EventAction>
 </StartAction>
@@ -1413,7 +1711,7 @@ Device is </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Owner>
-<Wherigo:WigoCartridge xsi:nil="true" ref="key13" />
+<Wherigo:WigoCartridge xsi:nil="true" ref="key17" />
 </Owner>
 </Actions:EventAction>
 </EndAction>
@@ -1423,7 +1721,7 @@ Device is </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Owner>
-<Wherigo:WigoCartridge xsi:nil="true" ref="key13" />
+<Wherigo:WigoCartridge xsi:nil="true" ref="key17" />
 </Owner>
 </Actions:EventAction>
 </ResumeAction>
@@ -1433,7 +1731,7 @@ Device is </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Owner>
-<Wherigo:WigoCartridge xsi:nil="true" ref="key13" />
+<Wherigo:WigoCartridge xsi:nil="true" ref="key17" />
 </Owner>
 </Actions:EventAction>
 </SaveAction>
@@ -1443,7 +1741,7 @@ Device is </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Owner>
-<Wherigo:WigoCartridge xsi:nil="true" ref="key13" />
+<Wherigo:WigoCartridge xsi:nil="true" ref="key17" />
 </Owner>
 </Actions:GlobalEventAction>
 </GlobalZoneEnterAction>
@@ -1453,7 +1751,7 @@ Device is </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Owner>
-<Wherigo:WigoCartridge xsi:nil="true" ref="key13" />
+<Wherigo:WigoCartridge xsi:nil="true" ref="key17" />
 </Owner>
 </Actions:GlobalEventAction>
 </GlobalZoneExitAction>
@@ -1463,7 +1761,7 @@ Device is </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Owner>
-<Wherigo:WigoCartridge xsi:nil="true" ref="key13" />
+<Wherigo:WigoCartridge xsi:nil="true" ref="key17" />
 </Owner>
 </Actions:GlobalEventAction>
 </GlobalZoneDistantAction>
@@ -1473,7 +1771,7 @@ Device is </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Owner>
-<Wherigo:WigoCartridge xsi:nil="true" ref="key13" />
+<Wherigo:WigoCartridge xsi:nil="true" ref="key17" />
 </Owner>
 </Actions:GlobalEventAction>
 </GlobalZoneProximityAction>
@@ -1483,7 +1781,7 @@ Device is </System:String>
 <System:Boolean>True</System:Boolean>
 </Enabled>
 <Owner>
-<Wherigo:WigoCartridge xsi:nil="true" ref="key13" />
+<Wherigo:WigoCartridge xsi:nil="true" ref="key17" />
 </Owner>
 </Actions:GlobalEventAction>
 </GlobalZoneActiveChangedAction>
